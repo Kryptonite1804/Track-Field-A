@@ -72,7 +72,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pourple_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-y2-dMr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-y2-dMr">
                                 <rect key="frame" x="0.0" y="88" width="414" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="tEv-AN-Hiy"/>
@@ -89,10 +89,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pourple_rectangle_shade" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-RB-26a">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_list_D" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-RB-26a">
                                                     <rect key="frame" x="27" y="10" width="369" height="151"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-j1-QlF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-j1-QlF">
                                                     <rect key="frame" x="220.5" y="103" width="155.5" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="lDU-Ax-Rrc"/>
@@ -117,13 +117,13 @@
                                                     <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="oeH-wK-Pvr">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="oeH-wK-Pvr">
                                                     <rect key="frame" x="39" y="52" width="337" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="JSz-UD-KPp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="uzX-wW-CSP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="uzX-wW-CSP">
                                                     <rect key="frame" x="39" y="103" width="155.5" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="CPf-hI-ePJ"/>
@@ -306,7 +306,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pourple_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="esD-bM-uUW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="esD-bM-uUW">
                                 <rect key="frame" x="0.0" y="88" width="414" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="SaZ-gg-cbp"/>
@@ -468,7 +468,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pourple_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="lC5-tN-E75">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="lC5-tN-E75">
                                 <rect key="frame" x="0.0" y="88" width="414" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="9Vm-7L-6QW"/>
@@ -583,17 +583,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIn-77-dYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1600" y="-1639"/>
+            <point key="canvasLocation" x="1600.0000000000002" y="-1639.2857142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="internaldrive.fill" catalog="system" width="128" height="87"/>
+        <image name="p_line_bold" width="375" height="3"/>
         <image name="p_line_light" width="320" height="1"/>
         <image name="p_rectangle_curbed_M" width="120" height="48"/>
-        <image name="pourple_line_bold" width="375" height="3"/>
-        <image name="pourple_rectangle_shade" width="330" height="153"/>
+        <image name="p_rectangle_list_D" width="330" height="153"/>
         <image name="r_line_light" width="320" height="1"/>
-        <image name="white_rectangle" width="135" height="36"/>
+        <image name="w_rectangle" width="135" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
