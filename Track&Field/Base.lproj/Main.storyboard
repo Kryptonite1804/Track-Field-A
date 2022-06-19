@@ -50,7 +50,7 @@
         <!--履歴-->
         <scene sceneID="Uvh-vI-Voi">
             <objects>
-                <viewController id="iMr-UC-NSy" sceneMemberID="viewController">
+                <viewController id="iMr-UC-NSy" customClass="History_0_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qko-A5-AmG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1367,7 +1367,7 @@
         <!--ランキング一覧-->
         <scene sceneID="cha-oN-91o">
             <objects>
-                <viewController id="Y5e-nv-Atw" sceneMemberID="viewController">
+                <viewController id="Y5e-nv-Atw" customClass="Ranking_0_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzX-Tk-oJI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2120,7 +2120,7 @@
         <!--ようこそ-->
         <scene sceneID="ODH-Nr-hfq">
             <objects>
-                <viewController id="Xph-E9-vZf" sceneMemberID="viewController">
+                <viewController id="Xph-E9-vZf" customClass="Login_0_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y2m-zL-HFy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4690,7 +4690,7 @@
         <!--Navigation 隠れる-->
         <scene sceneID="1h5-8c-gTC">
             <objects>
-                <viewController id="223-iX-i2S" sceneMemberID="viewController">
+                <viewController id="223-iX-i2S" customClass="Record_0_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AjL-Ld-Hf6">
                         <rect key="frame" x="0.0" y="0.0" width="415" height="920"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5039,17 +5039,6 @@
                                                     <constraint firstAttribute="height" constant="20" id="6c4-3n-L4I"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <menu key="menu" id="vdi-pj-gu4">
-                                                    <children>
-                                                        <command title="トラック" id="Lgi-rk-jXq"/>
-                                                        <command title="ロード" id="hgn-ri-QUH"/>
-                                                        <command title="公園" id="fYX-JH-PZR"/>
-                                                        <command title="ランニングコース" id="uaq-Ld-arc"/>
-                                                        <command title="トレッドミル" id="g2Q-Er-cMT"/>
-                                                        <command title="室内" id="zxo-iD-AuH"/>
-                                                        <command title="その他" id="FvJ-eb-dE3"/>
-                                                    </children>
-                                                </menu>
                                                 <state key="normal" title="トラック">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -5070,15 +5059,6 @@
                                                     <constraint firstAttribute="height" constant="20" id="Lf0-jm-2G2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <menu key="menu" id="Yag-H2-rYZ">
-                                                    <children>
-                                                        <command title="1 回" id="cVE-1R-lGR"/>
-                                                        <command title="2 回" id="eVZ-Kl-uNG"/>
-                                                        <command title="3 回" id="zWc-tZ-02B"/>
-                                                        <command title="4 回" id="BqH-W1-vvH"/>
-                                                        <command title="5 回" id="DpU-vB-3lP"/>
-                                                    </children>
-                                                </menu>
                                                 <state key="normal" title="0 回">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -5270,12 +5250,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBw-2h-ksV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="651"/>
+            <point key="canvasLocation" x="1645.6521739130435" y="650.89285714285711"/>
         </scene>
         <!--分析-->
         <scene sceneID="ozf-eK-ha9">
             <objects>
-                <viewController id="Ps6-u7-VXm" sceneMemberID="viewController">
+                <viewController id="Ps6-u7-VXm" customClass="Analize_0_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NIT-BV-fPm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5632,7 +5612,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
                                 <rect key="frame" x="27" y="173" width="360" height="80"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-60-kXW">
@@ -5640,7 +5620,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="tgV-fc-T0U"/>
                                 </constraints>
-                                <string key="text">「練習評価評価」と「走行走行距離」の
+                                <string key="text">「練習評価」と「走行距離」の
 折れ線グラフ</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -5746,7 +5726,6 @@
         <image name="w_rectangle" width="135" height="36"/>
         <image name="w_rectangle-curbed_NoLine" width="328" height="150"/>
         <image name="w_rectangle_curbed_L" width="322" height="42"/>
-        <image name="w_rectangle_curbed_Shadow" width="309" height="83"/>
         <image name="w_rectangle_curbshadow" width="328" height="44"/>
         <image name="👑" width="18" height="19"/>
         <systemColor name="labelColor">
