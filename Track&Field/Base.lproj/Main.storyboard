@@ -2224,7 +2224,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
-                                    <segue destination="Bv9-ah-yQT" kind="show" id="7Do-0B-iUM"/>
+                                    <segue destination="Bv9-ah-yQT" kind="show" identifier="" id="7Do-0B-iUM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3o8-im-6WV">
@@ -2621,7 +2621,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="ZFY-RV-RCG"/>
                     <connections>
-                        <segue destination="PR0-mI-rE2" kind="show" id="HPb-lg-gpn"/>
+                        <segue destination="PR0-mI-rE2" kind="show" identifier="go-1-3" id="HPb-lg-gpn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-qy-N2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2692,7 +2692,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <segue destination="sWC-X8-b3w" kind="show" id="CxH-K3-tz1"/>
+                                    <segue destination="sWC-X8-b3w" kind="show" identifier="" id="CxH-K3-tz1"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_M" translatesAutoresizingMaskIntoConstraints="NO" id="tkw-K5-nBz">
@@ -2893,7 +2893,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="1GM-yc-o3v"/>
                     <connections>
-                        <segue destination="6d7-5R-nfb" kind="show" id="XT7-u0-w79"/>
+                        <segue destination="6d7-5R-nfb" kind="show" identifier="go-2-2" id="XT7-u0-w79"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7u-UE-MIs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3114,8 +3114,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="qpT-C8-hkG"/>
                     <connections>
-                        <segue destination="oQp-G5-heT" kind="show" id="poA-E5-7Lu"/>
-                        <segue destination="0DT-yD-ooQ" kind="show" id="4Ul-uo-fqx"/>
+                        <segue destination="oQp-G5-heT" kind="show" identifier="go-1-4" id="poA-E5-7Lu"/>
+                        <segue destination="0DT-yD-ooQ" kind="show" identifier="go-1-7" id="4Ul-uo-fqx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bp-ns-60X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3264,7 +3264,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="z8d-1V-s29"/>
                     <connections>
-                        <segue destination="OY9-MG-upx" kind="show" id="H6i-SE-S3u"/>
+                        <segue destination="OY9-MG-upx" kind="show" identifier="go-1-5" id="H6i-SE-S3u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REb-IN-ryU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3548,7 +3548,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="mUG-xS-nPG"/>
                     <connections>
-                        <segue destination="58s-42-0Qs" kind="show" id="wzp-HE-dNl"/>
+                        <segue destination="58s-42-0Qs" kind="show" identifier="go-1-6" id="wzp-HE-dNl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1c-c6-NIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3699,7 +3699,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="QvP-HV-UZ7"/>
                     <connections>
-                        <segue destination="IoV-AE-SSL" kind="show" id="gko-1r-x0O"/>
+                        <segue destination="IoV-AE-SSL" kind="show" identifier="go-1-8" id="gko-1r-x0O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOC-4a-38O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3862,7 +3862,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="lJG-Oc-VRQ"/>
                     <connections>
-                        <segue destination="58s-42-0Qs" kind="show" id="xxO-Ku-SJd"/>
+                        <segue destination="58s-42-0Qs" kind="show" identifier="go-1-6" id="xxO-Ku-SJd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POT-Ig-X4s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5693,7 +5693,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xxO-Ku-SJd"/>
+        <segue reference="wzp-HE-dNl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Rectangle 139" width="25" height="25"/>
