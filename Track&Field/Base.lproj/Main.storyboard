@@ -270,7 +270,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="履歴" id="hdJ-UM-dzz"/>
                     <connections>
-                        <segue destination="dT4-KX-L6u" kind="show" id="Ver-ow-J34"/>
+                        <segue destination="dT4-KX-L6u" kind="show" identifier="go-h-1" id="Ver-ow-J34"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctW-Mj-fNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2401,7 +2401,7 @@
         <!--新規登録-->
         <scene sceneID="idh-ne-vBe">
             <objects>
-                <viewController id="sWC-X8-b3w" sceneMemberID="viewController">
+                <viewController id="sWC-X8-b3w" customClass="Login_1_2_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sZj-c2-AwG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2539,6 +2539,9 @@
                                 <rect key="frame" x="151.5" y="506" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="register_tapped" destination="sWC-X8-b3w" eventType="touchUpInside" id="uhe-fv-UeF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Da-sd-dGy">
                                 <rect key="frame" x="191.5" y="814" width="31" height="18"/>
@@ -2621,6 +2624,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="ZFY-RV-RCG"/>
                     <connections>
+                        <outlet property="email_TF" destination="Xpb-qQ-aqx" id="tRs-nf-cur"/>
+                        <outlet property="password_TF" destination="wHG-Gm-Njp" id="S4U-b4-iqe"/>
+                        <outlet property="repassword_TF" destination="lmP-5K-dOk" id="vWK-aY-TUi"/>
+                        <outlet property="username_TF" destination="Kle-CT-Yq7" id="eEF-M5-ARj"/>
                         <segue destination="PR0-mI-rE2" kind="show" identifier="go-1-3" id="HPb-lg-gpn"/>
                     </connections>
                 </viewController>
