@@ -812,7 +812,7 @@
                     <navigationItem key="navigationItem" title="練習の情報" id="Tsy-ic-rcG"/>
                     <size key="freeformSize" width="415" height="1043"/>
                     <connections>
-                        <segue destination="15X-i4-6be" kind="show" id="QvR-by-pwF"/>
+                        <segue destination="15X-i4-6be" kind="show" identifier="go-h-2" id="QvR-by-pwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apL-lh-c7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1146,7 +1146,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="その他の情報" id="wZh-Yj-LW7"/>
                     <connections>
-                        <segue destination="0on-6L-k3P" kind="show" id="GUj-4p-Wm1"/>
+                        <segue destination="0on-6L-k3P" kind="show" identifier="go-h-3" id="GUj-4p-Wm1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSE-Bn-ZNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1608,7 +1608,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ランキング一覧" id="b2W-9t-OLF"/>
                     <connections>
-                        <segue destination="Vza-UP-aua" kind="show" id="cDI-ld-vBL"/>
+                        <segue destination="Vza-UP-aua" kind="show" identifier="go-rank-1" id="cDI-ld-vBL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDc-NC-tyr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5251,8 +5251,8 @@
                     <navigationItem key="navigationItem" title="Navigation 隠れる" id="0No-Bp-QhQ"/>
                     <size key="freeformSize" width="415" height="920"/>
                     <connections>
-                        <segue destination="tWq-zj-VSR" kind="show" id="iMY-6F-Hy4"/>
-                        <segue destination="DHw-op-Z6D" kind="show" id="yH8-UZ-YIh"/>
+                        <segue destination="tWq-zj-VSR" kind="show" identifier="go-record-1" id="iMY-6F-Hy4"/>
+                        <segue destination="DHw-op-Z6D" kind="show" identifier="go-record-2" id="yH8-UZ-YIh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBw-2h-ksV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5582,7 +5582,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="分析" id="xVx-I0-RzQ"/>
                     <connections>
-                        <segue destination="Veh-G8-xpT" kind="show" id="7WY-Mb-1fv"/>
+                        <segue destination="Veh-G8-xpT" kind="show" identifier="go-ana-1" id="7WY-Mb-1fv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNf-E0-JXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
