@@ -22,6 +22,8 @@ class History_1_ViewController: UIViewController {
     @IBOutlet weak var todat_up_time: UILabel!
     @IBOutlet weak var main_mene_number: UILabel!
     @IBOutlet weak var main_mene_distance: UITextField!
+    @IBOutlet weak var main_mene_time: UILabel!
+    @IBOutlet weak var main_mene_pace: UILabel!
     @IBOutlet weak var today_down_distance: UILabel!
     @IBOutlet weak var today_down_time: UILabel!
     @IBOutlet weak var today_total_distance: UILabel!
