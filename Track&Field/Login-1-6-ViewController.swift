@@ -15,6 +15,11 @@ class Login_1_6_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func viewhowuse_1_6() {
+    }
+    
+    @IBAction func usenow_1_6() {
+    }
 
     /*
     // MARK: - Navigation

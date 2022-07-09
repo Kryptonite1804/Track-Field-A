@@ -15,6 +15,11 @@ class Login_1_3_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func groupmake_1_3() {
+    }
+    
+    @IBAction func groupjoin_1_3(){
+    }
 
     /*
     // MARK: - Navigation

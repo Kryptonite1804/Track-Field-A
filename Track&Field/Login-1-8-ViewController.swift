@@ -9,13 +9,20 @@ import UIKit
 
 class Login_1_8_ViewController: UIViewController {
 
+    @IBOutlet weak var groupID_1_8: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cancel_1_8() {
+    }
 
+    @IBAction func groupjoin_1_8() {
+    }
+    
     /*
     // MARK: - Navigation
 

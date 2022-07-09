@@ -9,12 +9,17 @@ import UIKit
 
 class Login_1_5_ViewController: UIViewController {
 
+    @IBOutlet weak var groupID_1_5: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func next_1_5() {
+    }
 
     /*
     // MARK: - Navigation

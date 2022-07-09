@@ -21,7 +21,6 @@ class Login_1_2_ViewController: UIViewController {
     }
     
     @IBAction func register_tapped() {
-        
     }
     
     

@@ -8,6 +8,8 @@
 import UIKit
 
 class Login_2_2_ViewController: UIViewController {
+    
+    @IBOutlet weak var accountname_2_2: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,11 @@ class Login_2_2_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cancel_2_2() {
+    }
+    
+    @IBAction func login_2_2() {
+    }
 
     /*
     // MARK: - Navigation

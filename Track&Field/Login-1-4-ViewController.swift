@@ -8,6 +8,8 @@
 import UIKit
 
 class Login_1_4_ViewController: UIViewController {
+    
+    @IBOutlet weak var groupmname_TF: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,8 @@ class Login_1_4_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func register_tapped_1_4(){
+    }
 
     /*
     // MARK: - Navigation

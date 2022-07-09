@@ -9,10 +9,16 @@ import UIKit
 
 class Login_2_1_ViewController: UIViewController {
 
+    @IBOutlet weak var cheackemail_TF: UITextField!
+    @IBOutlet weak var cheackpassord_TF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func login_2_1() {
     }
     
 

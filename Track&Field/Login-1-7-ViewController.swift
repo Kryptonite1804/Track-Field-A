@@ -9,10 +9,15 @@ import UIKit
 
 class Login_1_7_ViewController: UIViewController {
 
+    @IBOutlet weak var groupID_TF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func groupjoin_1_7() {
     }
     
 

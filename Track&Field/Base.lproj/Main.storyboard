@@ -2224,6 +2224,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
+                                    <action selector="register_tapped_0" destination="Xph-E9-vZf" eventType="touchUpInside" id="EPu-MJ-IdY"/>
                                     <segue destination="Bv9-ah-yQT" kind="show" identifier="" id="7Do-0B-iUM"/>
                                 </connections>
                             </button>
@@ -2232,6 +2233,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
+                                    <action selector="login_0" destination="Xph-E9-vZf" eventType="touchUpInside" id="fnV-aR-xTR"/>
                                     <segue destination="mLO-up-zd7" kind="show" id="drd-je-h70"/>
                                 </connections>
                             </button>
@@ -2699,6 +2701,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
+                                    <action selector="register_tapped_1_1" destination="Bv9-ah-yQT" eventType="touchUpInside" id="RPx-r4-map"/>
                                     <segue destination="sWC-X8-b3w" kind="show" identifier="" id="CxH-K3-tz1"/>
                                 </connections>
                             </button>
@@ -2723,6 +2726,9 @@
                                 <rect key="frame" x="27" y="243" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="afterdo_1_1" destination="Bv9-ah-yQT" eventType="touchUpInside" id="Tj9-vZ-BTb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d6w-eo-dXF"/>
@@ -2854,6 +2860,9 @@
                                 <rect key="frame" x="151.5" y="312" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="login_2_1" destination="mLO-up-zd7" eventType="touchUpInside" id="Dvw-df-KkM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MNG-sI-4pY"/>
@@ -2900,6 +2909,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="1GM-yc-o3v"/>
                     <connections>
+                        <outlet property="cheackemail_TF" destination="DUW-P7-b1V" id="i5z-iR-zK6"/>
+                        <outlet property="cheackpassord_TF" destination="FPF-5z-C5u" id="V1U-SG-cI8"/>
                         <segue destination="6d7-5R-nfb" kind="show" identifier="go-2-2" id="XT7-u0-w79"/>
                     </connections>
                 </viewController>
@@ -2986,6 +2997,9 @@
                                 <rect key="frame" x="282" y="402" width="105" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="groupmake_1_3:" destination="PR0-mI-rE2" eventType="touchUpInside" id="cHf-8a-H5j"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対に終了しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-rd-nu4">
                                 <rect key="frame" x="72" y="121" width="270" height="24"/>
@@ -3045,6 +3059,9 @@
                                 <rect key="frame" x="282" y="547" width="105" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="groupjoin_1_3" destination="PR0-mI-rE2" eventType="touchUpInside" id="bWY-dn-8bu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="既にグループIDをお持ちですか？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-2M-P8M">
                                 <rect key="frame" x="27" y="458" width="230" height="20"/>
@@ -3200,6 +3217,9 @@
                                 <rect key="frame" x="151.5" y="335" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="register_tapped_1_4" destination="oQp-G5-heT" eventType="touchUpInside" id="uP3-eL-oIv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対に終了しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-pp-RF7">
                                 <rect key="frame" x="72" y="118" width="270" height="24"/>
@@ -3271,6 +3291,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="z8d-1V-s29"/>
                     <connections>
+                        <outlet property="groupmname_TF" destination="Al4-hb-pQA" id="sY6-ww-MNf"/>
                         <segue destination="OY9-MG-upx" kind="show" identifier="go-1-5" id="H6i-SE-S3u"/>
                     </connections>
                 </viewController>
@@ -3340,6 +3361,9 @@
                                 <rect key="frame" x="276" y="295" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="login_2_2" destination="6d7-5R-nfb" eventType="touchUpInside" id="bb1-Ok-cDA"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_M" translatesAutoresizingMaskIntoConstraints="NO" id="TUF-oz-TTv">
                                 <rect key="frame" x="27" y="295" width="111" height="42"/>
@@ -3362,6 +3386,9 @@
                                 <rect key="frame" x="27" y="295" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="cancel_2_2" destination="6d7-5R-nfb" eventType="touchUpInside" id="gVF-Xw-bVW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyp-eR-zUC">
                                 <rect key="frame" x="27" y="228" width="360" height="40"/>
@@ -3409,6 +3436,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="QK8-KQ-yvv"/>
+                    <connections>
+                        <outlet property="accountname_2_2" destination="Qyp-eR-zUC" id="e8r-bf-uPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="76J-dd-cFn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3476,6 +3506,9 @@
                                 <rect key="frame" x="151.5" y="425" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="next_1_5" destination="OY9-MG-upx" eventType="touchUpInside" id="aRR-B5-UXM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49N-Zc-Eg4">
                                 <rect key="frame" x="27" y="282" width="360" height="40"/>
@@ -3555,6 +3588,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="mUG-xS-nPG"/>
                     <connections>
+                        <outlet property="groupID_1_5" destination="49N-Zc-Eg4" id="hyO-ri-sCN"/>
                         <segue destination="58s-42-0Qs" kind="show" identifier="go-1-6" id="wzp-HE-dNl"/>
                     </connections>
                 </viewController>
@@ -3633,6 +3667,9 @@
                                 <rect key="frame" x="151.5" y="353" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="groupjoin_1_7" destination="0DT-yD-ooQ" eventType="touchUpInside" id="r24-ad-FYN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対に終了しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-aO-4Ce">
                                 <rect key="frame" x="72" y="118" width="270" height="24"/>
@@ -3706,6 +3743,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="QvP-HV-UZ7"/>
                     <connections>
+                        <outlet property="groupID_TF" destination="Jsg-pC-cDq" id="hB9-vy-QIS"/>
                         <segue destination="IoV-AE-SSL" kind="show" identifier="go-1-8" id="gko-1r-x0O"/>
                     </connections>
                 </viewController>
@@ -3775,6 +3813,9 @@
                                 <rect key="frame" x="276" y="349" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="groupjoin_1_8" destination="IoV-AE-SSL" eventType="touchUpInside" id="SrK-93-2f4"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_M" translatesAutoresizingMaskIntoConstraints="NO" id="KLn-zs-djz">
                                 <rect key="frame" x="27" y="349" width="111" height="42"/>
@@ -3797,6 +3838,9 @@
                                 <rect key="frame" x="27" y="349" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="cancel_1_8" destination="IoV-AE-SSL" eventType="touchUpInside" id="D2d-6S-3tx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-Gg-U1t">
                                 <rect key="frame" x="27" y="282" width="360" height="40"/>
@@ -3869,6 +3913,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="lJG-Oc-VRQ"/>
                     <connections>
+                        <outlet property="groupID_1_8" destination="lWv-Gg-U1t" id="iaP-xG-mlk"/>
                         <segue destination="58s-42-0Qs" kind="show" identifier="go-1-6" id="xxO-Ku-SJd"/>
                     </connections>
                 </viewController>
@@ -3940,6 +3985,9 @@
                                 <rect key="frame" x="130.5" y="261" width="153" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="viewhowuse_1_6" destination="58s-42-0Qs" eventType="touchUpInside" id="ZYQ-Uw-hmS"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_L" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-dk-ALA">
                                 <rect key="frame" x="130.5" y="330" width="153" height="42"/>
@@ -3962,6 +4010,9 @@
                                 <rect key="frame" x="130.5" y="330" width="153" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="usenow_1_6" destination="58s-42-0Qs" eventType="touchUpInside" id="zue-F8-Cuo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P6p-X8-Kyt"/>
@@ -5700,7 +5751,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xxO-Ku-SJd"/>
+        <segue reference="wzp-HE-dNl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Rectangle 139" width="25" height="25"/>

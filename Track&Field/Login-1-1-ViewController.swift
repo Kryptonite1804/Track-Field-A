@@ -9,12 +9,16 @@ import UIKit
 
 class Login_1_1_ViewController: UIViewController {
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func register_tapped_1_1(){
+    }
+    
+    @IBAction func afterdo_1_1(){
     }
     
 
