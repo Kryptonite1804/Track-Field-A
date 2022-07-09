@@ -9,13 +9,25 @@ import UIKit
 
 class Record_0_ViewController: UIViewController {
 
+    @IBOutlet weak var month: UILabel!
+    @IBOutlet weak var day: UILabel!
+    @IBOutlet weak var date: UILabel!
+    @IBOutlet weak var weather1: UIImageView!
+    @IBOutlet weak var weather2: UIImageView!
+    @IBOutlet weak var maxtemper: UILabel!
+    @IBOutlet weak var mintemper: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func parctice_record() {
+    }
     
-
+    @IBAction func pain_record() {
+    }
+    
     /*
     // MARK: - Navigation
 

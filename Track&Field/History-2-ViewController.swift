@@ -9,13 +9,26 @@ import UIKit
 
 class History_2_ViewController: UIViewController {
 
+    @IBOutlet weak var today_place_feild: UIImageView!
+    @IBOutlet weak var today_point: UILabel!
+    @IBOutlet weak var today_pain: UILabel!
+    @IBOutlet weak var today_eat_time: UILabel!
+    @IBOutlet weak var today_sleep: UILabel!
+    @IBOutlet weak var today_tired: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func back() {
+    }
+    
+    @IBAction func pain() {
+    }
+    
     /*
     // MARK: - Navigation
 

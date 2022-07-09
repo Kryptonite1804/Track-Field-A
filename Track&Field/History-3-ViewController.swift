@@ -9,13 +9,22 @@ import UIKit
 
 class History_3_ViewController: UIViewController {
 
+    @IBOutlet weak var pain_number: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func pain_slider(_ sender: UISlider) {
+    }
+    
+    @IBAction func back() {
+    }
+    
     /*
     // MARK: - Navigation
 

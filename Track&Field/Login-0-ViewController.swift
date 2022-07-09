@@ -16,11 +16,9 @@ class Login_0_ViewController: UIViewController {
     }
     
     @IBAction func register_tapped_0() {
-        
     }
     
     @IBAction func login_0() {
-        
     }
     
 

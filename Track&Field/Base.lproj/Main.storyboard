@@ -233,6 +233,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="&gt;">
                                     <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="aftermonth" destination="iMr-UC-NSy" eventType="touchUpInside" id="TEf-nP-IUP"/>
+                                    <action selector="afthermonth" destination="iMr-UC-NSy" eventType="touchUpInside" id="D2W-rG-u8H"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tM8-mT-JyQ">
                                 <rect key="frame" x="27" y="108" width="55" height="49"/>
@@ -244,6 +248,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;">
                                     <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="beforemonth" destination="iMr-UC-NSy" eventType="touchUpInside" id="inE-Nw-HOX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hhu-75-vBg"/>
@@ -270,6 +277,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="履歴" id="hdJ-UM-dzz"/>
                     <connections>
+                        <outlet property="day_date" destination="Crd-Dj-qrq" id="hqF-EM-Gng"/>
+                        <outlet property="month" destination="cT8-q1-rUf" id="dKd-xi-gFE"/>
+                        <outlet property="tdoy_mene" destination="8Xn-uX-EZG" id="0GO-J1-vy8"/>
+                        <outlet property="today_pain" destination="O1I-bj-whe" id="s3X-eu-ad0"/>
+                        <outlet property="today_point" destination="kfW-Kt-bqe" id="k5q-Lt-WiN"/>
+                        <outlet property="todey_distance" destination="vKD-Ir-Zl7" id="S2b-JY-dim"/>
+                        <outlet property="year" destination="Vb8-Fu-k23" id="nWH-K5-1Dm"/>
                         <segue destination="dT4-KX-L6u" kind="show" identifier="go-his-1" id="Ver-ow-J34"/>
                     </connections>
                 </viewController>
@@ -535,6 +549,17 @@
                                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-AL-ccN">
+                                                                    <rect key="frame" x="290" y="38.5" width="100" height="18.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="100" id="EGp-cy-XlH"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" red="0.68235294117647061" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain" title="88:88/km">
+                                                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                    </buttonConfiguration>
+                                                                </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb5-Bz-wXq">
                                                                     <rect key="frame" x="290" y="17.5" width="100" height="21"/>
                                                                     <constraints>
@@ -545,17 +570,6 @@
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="plain" title="88:88">
                                                                         <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                                    </buttonConfiguration>
-                                                                </button>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-AL-ccN">
-                                                                    <rect key="frame" x="290" y="38.5" width="100" height="18.5"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="100" id="EGp-cy-XlH"/>
-                                                                    </constraints>
-                                                                    <color key="tintColor" red="0.68235294117647061" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="plain" title="88:88/km">
-                                                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
                                                                     </buttonConfiguration>
                                                                 </button>
                                                             </subviews>
@@ -675,6 +689,9 @@
                                                 <rect key="frame" x="131" y="797" width="153" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <action selector="otherinfo" destination="dT4-KX-L6u" eventType="touchUpInside" id="Gsa-pz-Gof"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -812,12 +829,28 @@
                     <navigationItem key="navigationItem" title="練習の情報" id="Tsy-ic-rcG"/>
                     <size key="freeformSize" width="415" height="1043"/>
                     <connections>
+                        <outlet property="date" destination="NIO-rI-JV8" id="uVH-du-N2h"/>
+                        <outlet property="day" destination="2co-9z-5f6" id="nkm-t0-Rye"/>
+                        <outlet property="main_mene_distance" destination="uxd-ox-Blv" id="l2u-a5-urm"/>
+                        <outlet property="main_mene_number" destination="QPE-8D-Fcz" id="hcf-V6-rSe"/>
+                        <outlet property="maxtemper" destination="BrO-ec-Vzf" id="ti1-WJ-wsb"/>
+                        <outlet property="mintemper" destination="pYo-Xg-dnH" id="jGA-OE-n6w"/>
+                        <outlet property="month" destination="qDZ-EC-EOi" id="mkE-oI-CQc"/>
+                        <outlet property="todat_up_time" destination="lHK-2s-829" id="QfL-FH-8vt"/>
+                        <outlet property="today_down_distance" destination="ysU-3R-IzJ" id="Mwf-Jm-sZI"/>
+                        <outlet property="today_down_time" destination="89P-0W-BsX" id="iuY-oB-7nn"/>
+                        <outlet property="today_mene" destination="x3a-LO-dOk" id="zQC-4H-6q2"/>
+                        <outlet property="today_practicetype" destination="YCZ-mU-S92" id="DZI-KG-wzm"/>
+                        <outlet property="today_total_distance" destination="eNK-02-RjU" id="c4X-MH-kUY"/>
+                        <outlet property="today_up_distance" destination="lLP-DU-q5L" id="WYR-Lc-ZY5"/>
+                        <outlet property="weather1" destination="yeT-7T-wsS" id="P5f-Aq-i2p"/>
+                        <outlet property="weather2" destination="OQs-UQ-cdI" id="ek4-eC-QLd"/>
                         <segue destination="15X-i4-6be" kind="show" identifier="go-his-2" id="QvR-by-pwF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apL-lh-c7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="-218"/>
+            <point key="canvasLocation" x="2387.68115942029" y="-218.63839285714286"/>
         </scene>
         <!--その他の情報-->
         <scene sceneID="dxq-TH-4QZ">
@@ -865,7 +898,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="トラック" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otS-MN-IZ7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日吉/トラック" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otS-MN-IZ7">
                                 <rect key="frame" x="191" y="161" width="181" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="a3Z-JZ-qav"/>
@@ -1023,6 +1056,9 @@
                                 <rect key="frame" x="151.5" y="756" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="back" destination="15X-i4-6be" eventType="touchUpInside" id="tRm-yh-H6Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZZ-SN-Dcn">
                                 <rect key="frame" x="174" y="765.5" width="66" height="20"/>
@@ -1055,6 +1091,9 @@
                                 <rect key="frame" x="27" y="269" width="363" height="45"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="pain" destination="15X-i4-6be" eventType="touchUpInside" id="iTg-um-VUg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VI5-Lr-3nZ"/>
@@ -1146,6 +1185,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="その他の情報" id="wZh-Yj-LW7"/>
                     <connections>
+                        <outlet property="today_eat_time" destination="Yi1-cq-4bN" id="NPY-RJ-NZf"/>
+                        <outlet property="today_pain" destination="8cW-Mf-BoN" id="SRK-IM-ACp"/>
+                        <outlet property="today_place_feild" destination="azJ-eM-39r" id="GtB-59-O0b"/>
+                        <outlet property="today_point" destination="Z1Y-L4-H8Q" id="UZk-eU-oVo"/>
+                        <outlet property="today_sleep" destination="RFi-2E-Hcn" id="SvZ-sW-NFq"/>
+                        <outlet property="today_tired" destination="80u-KX-66Q" id="1Ls-FT-9aR"/>
                         <segue destination="0on-6L-k3P" kind="show" identifier="go-his-3" id="GUj-4p-Wm1"/>
                     </connections>
                 </viewController>
@@ -1243,6 +1288,9 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.69019607843137254" green="0.69019615649999999" blue="0.69019615649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pain_slider:" destination="0on-6L-k3P" eventType="valueChanged" id="BM8-8C-vs2"/>
+                                </connections>
                             </slider>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jb4-bH-uML">
                                 <rect key="frame" x="42" y="640" width="330" height="93"/>
@@ -1272,6 +1320,9 @@
                                 <rect key="frame" x="151.5" y="761" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="back" destination="0on-6L-k3P" eventType="touchUpInside" id="0kB-ff-5zg"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9BK-PH-7Uf">
                                 <rect key="frame" x="52" y="510" width="25" height="25"/>
@@ -1342,6 +1393,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="痛み" id="spe-aw-cFp"/>
+                    <connections>
+                        <outlet property="pain_number" destination="f6j-T6-VNl" id="tCK-qs-kcN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moc-8H-1wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5145,11 +5199,17 @@
                                                 <rect key="frame" x="27" y="102" width="364" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="parctice_record" destination="223-iX-i2S" eventType="touchUpInside" id="AHx-dI-DTE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihb-qK-TAb">
                                                 <rect key="frame" x="27" y="282" width="364" height="45"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="pain_record" destination="223-iX-i2S" eventType="touchUpInside" id="76D-EK-MIC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5302,6 +5362,13 @@
                     <navigationItem key="navigationItem" title="Navigation 隠れる" id="0No-Bp-QhQ"/>
                     <size key="freeformSize" width="415" height="920"/>
                     <connections>
+                        <outlet property="date" destination="Zps-Rw-lZV" id="JWG-47-3o8"/>
+                        <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
+                        <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
+                        <outlet property="mintemper" destination="hha-PB-J5E" id="NkZ-Bx-Wwo"/>
+                        <outlet property="month" destination="vy2-uT-hKc" id="lIy-vL-nhv"/>
+                        <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
+                        <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
                         <segue destination="tWq-zj-VSR" kind="show" identifier="go-record-1" id="iMY-6F-Hy4"/>
                         <segue destination="DHw-op-Z6D" kind="show" identifier="go-record-2" id="yH8-UZ-YIh"/>
                     </connections>
