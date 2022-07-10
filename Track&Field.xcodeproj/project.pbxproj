@@ -98,9 +98,12 @@
 		E6F861C8284C83FE00A62B2E /* Track&Field */ = {
 			isa = PBXGroup;
 			children = (
+				E6F861D2284C840100A62B2E /* Assets.xcassets */,
+				E6F861D7284C840100A62B2E /* Info.plist */,
+				E6F861CF284C83FE00A62B2E /* Main.storyboard */,
+				E6F861D4284C840100A62B2E /* LaunchScreen.storyboard */,
 				E6F861C9284C83FE00A62B2E /* AppDelegate.swift */,
 				E6F861CB284C83FE00A62B2E /* SceneDelegate.swift */,
-				E6F861CF284C83FE00A62B2E /* Main.storyboard */,
 				E66B38F2285F2F510013338B /* Login-0-ViewController.swift */,
 				E66B3903287852860013338B /* Login-1-1-ViewController.swift */,
 				E66B38FD285F32F50013338B /* Login-1-2-ViewController.swift */,
@@ -123,9 +126,6 @@
 				E66B3921287855F60013338B /* Analize-1-ViewController.swift */,
 				E66B38FA285F303B0013338B /* Ranking-0-ViewController.swift */,
 				E66B391F287855D90013338B /* Ranking-1-ViewController.swift */,
-				E6F861D2284C840100A62B2E /* Assets.xcassets */,
-				E6F861D4284C840100A62B2E /* LaunchScreen.storyboard */,
-				E6F861D7284C840100A62B2E /* Info.plist */,
 			);
 			path = "Track&Field";
 			sourceTree = "<group>";
