@@ -28,7 +28,6 @@ class History_1_ViewController: UIViewController {
      */
     
     @IBOutlet weak var table_view: UITableView!
-
     @IBOutlet weak var main_mene_pace: UILabel!
     @IBOutlet weak var today_down_distance: UILabel!
     @IBOutlet weak var today_down_time: UILabel!

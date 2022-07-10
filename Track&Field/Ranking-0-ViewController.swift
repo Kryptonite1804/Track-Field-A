@@ -9,13 +9,23 @@ import UIKit
 
 class Ranking_0_ViewController: UIViewController {
 
+    @IBOutlet weak var year: UILabel!
+    @IBOutlet weak var month: UILabel!
+    
+    @IBOutlet weak var ranking: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func before_month() {
+    }
+    
+    @IBAction func after_month() {
+    }
+    
     /*
     // MARK: - Navigation
 

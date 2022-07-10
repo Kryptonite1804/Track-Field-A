@@ -8,14 +8,40 @@
 import UIKit
 
 class Record_1_ViewController: UIViewController {
-
+    
+    @IBOutlet weak var practice_comment_record: UITextField!
+    @IBOutlet weak var up_distance_record: UITextField!
+    @IBOutlet weak var main_mene_record: UITableView!
+    @IBOutlet weak var down_distance_record: UITextField!
+    @IBOutlet weak var total_distance_record: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func teamtype_record() {
+    }
+    
+    @IBAction func practictype_record() {
+    }
+    
+    @IBAction func up_time_record() {
+    }
+    
+    @IBAction func main_mene_add() {
+    }
+    @IBAction func down_time_record() {
+    }
+    
+    @IBAction func complete() {
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

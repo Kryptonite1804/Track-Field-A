@@ -8,6 +8,10 @@
 import UIKit
 
 class Analize_1_ViewController: UIViewController {
+    
+    @IBOutlet weak var grapf_kind: UILabel!
+    @IBOutlet weak var graph_titile: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +19,9 @@ class Analize_1_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func back() {
+    }
+    
     /*
     // MARK: - Navigation
 

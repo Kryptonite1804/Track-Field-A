@@ -9,13 +9,32 @@ import UIKit
 
 class Analize_0_ViewController: UIViewController {
 
+    @IBOutlet weak var startday_check: UIImageView!
+    @IBOutlet weak var endday_check: UIImageView!
+    @IBOutlet weak var graph_key1_check: UIImageView!
+    @IBOutlet weak var graph_key2_check: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func graph_key1() {
+    }
+    
+    @IBAction func graph_key2() {
+    }
+    
+    @IBAction func make_graph() {
+    }
+    
+    @IBAction func startay() {
+    }
+    
+    @IBAction func endday() {
+    }
+    
     /*
     // MARK: - Navigation
 

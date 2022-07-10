@@ -17,6 +17,16 @@ class Record_0_ViewController: UIViewController {
     @IBOutlet weak var maxtemper: UILabel!
     @IBOutlet weak var mintemper: UILabel!
     
+    @IBOutlet weak var practice_mene_check: UIImageView!
+    @IBOutlet weak var place_feild_check: UIImageView!
+    @IBOutlet weak var point_check: UIImageView!
+    @IBOutlet weak var pain_check: UIImageView!
+    @IBOutlet weak var eat_time_check: UIImageView!
+    @IBOutlet weak var sleep_check: UIImageView!
+    @IBOutlet weak var tired_check: UIImageView!
+    @IBOutlet weak var writinng_check: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,8 +35,24 @@ class Record_0_ViewController: UIViewController {
     @IBAction func parctice_record() {
     }
     
+    @IBAction func place_feild_record() {
+    }
+    
+    @IBAction func point_record() {
+    }
+    
     @IBAction func pain_record() {
     }
+    
+    @IBAction func eat_time_record() {
+    }
+    
+    @IBAction func sleep_record() {
+    }
+    
+    @IBAction func tired_record() {
+    }
+    
     
     /*
     // MARK: - Navigation

@@ -1452,6 +1452,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="&gt;">
                                     <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="after_month" destination="Y5e-nv-Atw" eventType="touchUpInside" id="Qxp-lE-MMu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAD-sm-GM9">
                                 <rect key="frame" x="27" y="96" width="55" height="74"/>
@@ -1463,6 +1466,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;">
                                     <fontDescription key="titleFontDescription" type="system" weight="light" pointSize="50"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="before_month" destination="Y5e-nv-Atw" eventType="touchUpInside" id="rV8-H7-deP"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zz2-Aj-Y23">
                                 <rect key="frame" x="0.0" y="167" width="414" height="646"/>
@@ -1490,7 +1496,7 @@
                                                     <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_L" translatesAutoresizingMaskIntoConstraints="NO" id="pwd-YW-lPO">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="pwd-YW-lPO">
                                                     <rect key="frame" x="40" y="52.5" width="333" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="eu0-gd-qIR"/>
@@ -1522,7 +1528,7 @@
                                                     <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_L" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-Cy-Iim">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-Cy-Iim">
                                                     <rect key="frame" x="40" y="98.5" width="333" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="BK5-zy-8Zo"/>
@@ -1554,7 +1560,7 @@
                                                     <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_L" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-n1-Wfo">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-n1-Wfo">
                                                     <rect key="frame" x="40" y="144.5" width="333" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="1lr-fJ-Ge8"/>
@@ -1652,6 +1658,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="ランキング一覧" id="b2W-9t-OLF"/>
                     <connections>
+                        <outlet property="first_man" destination="QXK-dD-JuN" id="P4V-cr-rnx"/>
+                        <outlet property="month" destination="77t-oQ-doe" id="A0Y-tV-11N"/>
+                        <outlet property="ranking" destination="zz2-Aj-Y23" id="HiF-iB-d1Z"/>
+                        <outlet property="year" destination="3np-n7-aFl" id="wsW-jd-b4o"/>
                         <segue destination="Vza-UP-aua" kind="show" identifier="go-rank-1" id="cDI-ld-vBL"/>
                     </connections>
                 </viewController>
@@ -2105,6 +2115,38 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="総距離ランキング" id="EFn-bl-VaM"/>
+                    <connections>
+                        <outlet property="eighth_bar" destination="V00-DV-6aZ" id="Tki-yq-cFE"/>
+                        <outlet property="eighth_name" destination="efJ-Cb-ZRZ" id="tWN-ZL-ajx"/>
+                        <outlet property="eighth_reccord" destination="u8a-d5-CVo" id="uXj-Ub-sJc"/>
+                        <outlet property="fifth_bar" destination="uia-yz-FZK" id="EMp-zd-UeH"/>
+                        <outlet property="fifth_name" destination="ViY-aD-ibj" id="amN-ec-B5x"/>
+                        <outlet property="fifth_record" destination="nRm-aB-pc0" id="Gox-SL-kxi"/>
+                        <outlet property="first_bar" destination="bgq-v9-wI5" id="IdS-4I-Cpm"/>
+                        <outlet property="first_name" destination="Prb-vy-th2" id="AHP-Uu-D4c"/>
+                        <outlet property="first_record" destination="wtD-yB-n1q" id="gvN-qe-dnh"/>
+                        <outlet property="forth_bar" destination="KiW-1Y-qBX" id="WCt-36-85D"/>
+                        <outlet property="forth_name" destination="mSU-Jc-Y6d" id="Y1M-dm-2DJ"/>
+                        <outlet property="forth_record" destination="SFM-7m-oaE" id="RJD-dr-BET"/>
+                        <outlet property="nineth_bar" destination="ClS-lL-2au" id="MMy-Ej-rZp"/>
+                        <outlet property="nineth_name" destination="Trd-Kq-J1t" id="ixh-MS-bs1"/>
+                        <outlet property="nineth_record" destination="EKM-ya-1qi" id="9Mj-Ii-d2x"/>
+                        <outlet property="second_bar" destination="BTp-sp-rm0" id="Esz-3Z-Qkc"/>
+                        <outlet property="second_name" destination="0FY-M5-eAu" id="1hT-qh-feL"/>
+                        <outlet property="second_record" destination="AoK-eo-QW0" id="Zmu-iH-cQC"/>
+                        <outlet property="seventh_bar" destination="gRW-a1-FMQ" id="doV-iY-gzn"/>
+                        <outlet property="seventh_name" destination="thR-wJ-eLx" id="9Jo-fm-fWK"/>
+                        <outlet property="seventh_record" destination="Bmb-GB-JEd" id="teE-LQ-K8N"/>
+                        <outlet property="six_name" destination="mSG-Hm-6Bo" id="5fS-4h-fMW"/>
+                        <outlet property="sixth_bar" destination="4WC-pW-NDC" id="Dk3-F1-bxu"/>
+                        <outlet property="sixth_record" destination="xCX-vv-Y0T" id="oDE-HC-92V"/>
+                        <outlet property="ten_name" destination="zcZ-oI-yUP" id="poB-rp-Kcb"/>
+                        <outlet property="tenth_bar" destination="Fht-1B-UVB" id="VzV-Kn-uaU"/>
+                        <outlet property="tenth_record" destination="A3G-eL-Zdy" id="4eS-I7-blz"/>
+                        <outlet property="third_bar" destination="ZKW-hG-J5X" id="hqg-xi-8yG"/>
+                        <outlet property="third_name" destination="KDn-tm-5yU" id="PF9-Ek-g6q"/>
+                        <outlet property="third_record" destination="MkW-G6-MFc" id="gXu-0h-Exg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2wW-KT-rjx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3042,7 +3084,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
-                                    <action selector="groupmake_1_3:" destination="PR0-mI-rE2" eventType="touchUpInside" id="cHf-8a-H5j"/>
+                                    <action selector="groupmake_1_3" destination="PR0-mI-rE2" eventType="touchUpInside" id="AMA-3c-NBE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対に終了しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDB-rd-nu4">
@@ -4355,6 +4397,9 @@
                                                 <rect key="frame" x="280" y="833" width="108" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <action selector="complete" destination="tWq-zj-VSR" eventType="touchUpInside" id="VMb-kv-Onv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86n-Z0-FZZ">
                                                 <rect key="frame" x="149" y="166" width="224" height="33"/>
@@ -4371,6 +4416,9 @@
                                                 <state key="normal" title="JOG">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="practictype_record" destination="tWq-zj-VSR" eventType="touchUpInside" id="q56-sq-3TL"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="内容を入力..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjS-fL-IXs">
                                                 <rect key="frame" x="97" y="221" width="276" height="33"/>
@@ -4413,6 +4461,9 @@
                                                 <state key="normal" title="A">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="teamtype_record" destination="tWq-zj-VSR" eventType="touchUpInside" id="xDJ-Jh-pIL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbY-T8-t8d">
                                                 <rect key="frame" x="221.5" y="324" width="159.5" height="33"/>
@@ -4424,6 +4475,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="baseForegroundColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="up_time_record" destination="tWq-zj-VSR" eventType="touchUpInside" id="Cn1-S8-jxD"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3000 m" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47o-he-Uob">
                                                 <rect key="frame" x="42" y="324" width="159.5" height="33"/>
@@ -4442,6 +4496,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="p_+"/>
+                                                <connections>
+                                                    <action selector="main_mene_add" destination="tWq-zj-VSR" eventType="touchUpInside" id="usM-df-bZK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHE-Vi-QAr">
                                                 <rect key="frame" x="221.5" y="658" width="159.5" height="33"/>
@@ -4453,6 +4510,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="baseForegroundColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="down_time_record" destination="tWq-zj-VSR" eventType="touchUpInside" id="e5e-pl-T4h"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3000 m" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVn-S9-JAo">
                                                 <rect key="frame" x="42" y="658" width="159.5" height="33"/>
@@ -4588,6 +4648,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="メニューを記録" id="ROu-1F-HYH"/>
                     <size key="freeformSize" width="415" height="1079"/>
+                    <connections>
+                        <outlet property="down_distance_record" destination="hVn-S9-JAo" id="SAQ-MX-w4a"/>
+                        <outlet property="main_mene_record" destination="y4c-SN-GmE" id="0tJ-VV-NQK"/>
+                        <outlet property="practice_comment_record" destination="pjS-fL-IXs" id="yOP-Rq-Byk"/>
+                        <outlet property="total_distance_record" destination="YGs-bd-pdu" id="r1j-YT-mgF"/>
+                        <outlet property="up_distance_record" destination="47o-he-Uob" id="nzB-MA-JRN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YC2-EB-AMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5144,6 +5211,9 @@
                                                 <state key="normal" title="トラック">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="place_feild_record" destination="223-iX-i2S" eventType="touchUpInside" id="naN-FF-Tgf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r8-qs-2iX">
                                                 <rect key="frame" x="161" y="231.5" width="212" height="20"/>
@@ -5154,6 +5224,9 @@
                                                 <state key="normal" title="★★★★☆">
                                                     <color key="titleColor" red="0.96070289039039036" green="0.79175717821814995" blue="0.18636473707747717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="point_record" destination="223-iX-i2S" eventType="touchUpInside" id="gfT-9z-4Ah"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1m-Eq-8oa">
                                                 <rect key="frame" x="124" y="351.5" width="249" height="20"/>
@@ -5164,6 +5237,9 @@
                                                 <state key="normal" title="0 回">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eat_time_record" destination="223-iX-i2S" eventType="touchUpInside" id="3Iw-D3-Hg9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wE8-Dc-D4G">
                                                 <rect key="frame" x="124" y="411.5" width="249" height="20"/>
@@ -5174,6 +5250,9 @@
                                                 <state key="normal" title="23:00 ~ 06:30">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sleep_record" destination="223-iX-i2S" eventType="touchUpInside" id="vBc-NS-B1h"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0D-bB-hS7">
                                                 <rect key="frame" x="143" y="471.5" width="230" height="20"/>
@@ -5184,6 +5263,9 @@
                                                 <state key="normal" title="余力あり 5">
                                                     <color key="titleColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="tired_record" destination="223-iX-i2S" eventType="touchUpInside" id="lzr-Ib-aAc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJz-gk-TVa">
                                                 <rect key="frame" x="27" y="102" width="364" height="45"/>
@@ -5354,11 +5436,19 @@
                     <connections>
                         <outlet property="date" destination="Zps-Rw-lZV" id="JWG-47-3o8"/>
                         <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
+                        <outlet property="eat_time_check" destination="Osb-cA-2Um" id="OjA-5c-1kK"/>
                         <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
                         <outlet property="mintemper" destination="hha-PB-J5E" id="NkZ-Bx-Wwo"/>
                         <outlet property="month" destination="vy2-uT-hKc" id="lIy-vL-nhv"/>
+                        <outlet property="pain_check" destination="Cqv-bJ-tif" id="bZE-MX-2sl"/>
+                        <outlet property="place_feild_check" destination="eNO-0N-rRq" id="zUg-aG-0E0"/>
+                        <outlet property="point_check" destination="Yqx-2d-l2l" id="HPF-3J-UQ6"/>
+                        <outlet property="practice_mene_check" destination="0b6-Jo-6U9" id="mfk-v6-67G"/>
+                        <outlet property="sleep_check" destination="mZ9-Fg-gkj" id="HFt-Z4-OVd"/>
+                        <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
                         <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
                         <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
+                        <outlet property="writinng_check" destination="ksy-6W-5K4" id="oaD-2l-AbS"/>
                         <segue destination="tWq-zj-VSR" kind="show" identifier="go-record-1" id="iMY-6F-Hy4"/>
                         <segue destination="DHw-op-Z6D" kind="show" identifier="go-record-2" id="yH8-UZ-YIh"/>
                     </connections>
@@ -5428,6 +5518,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="adu-6o-Wua"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="startay" destination="Ps6-u7-VXm" eventType="valueChanged" id="5Tz-9n-28C"/>
+                                </connections>
                             </datePicker>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-oQ-SH6" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="339" width="363" height="45"/>
@@ -5459,6 +5552,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="kvx-Y5-Nr4"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="endday" destination="Ps6-u7-VXm" eventType="valueChanged" id="j3H-ZK-bHY"/>
+                                </connections>
                             </datePicker>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="0bv-Kt-4TD" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="452" width="363" height="45"/>
@@ -5534,6 +5630,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="要素を選択...">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="graph_key1" destination="Ps6-u7-VXm" eventType="touchUpInside" id="lBy-UQ-gGf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpz-Wj-ge1">
                                 <rect key="frame" x="142.5" y="536.5" width="237.5" height="20"/>
@@ -5545,6 +5644,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="要素を選択...">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="graph_key2" destination="Ps6-u7-VXm" eventType="touchUpInside" id="xwg-t7-EyY"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_L" translatesAutoresizingMaskIntoConstraints="NO" id="XvQ-OM-x8a">
                                 <rect key="frame" x="138.5" y="602" width="137" height="42"/>
@@ -5567,6 +5669,9 @@
                                 <rect key="frame" x="138.5" y="602" width="137" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="make_graph" destination="Ps6-u7-VXm" eventType="touchUpInside" id="7GV-Y4-AyO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="グラフで分析" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v56-aM-rcK">
                                 <rect key="frame" x="27" y="116" width="145" height="24"/>
@@ -5690,6 +5795,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="分析" id="xVx-I0-RzQ"/>
                     <connections>
+                        <outlet property="endday_check" destination="FZs-TB-W4j" id="X97-XI-S4k"/>
+                        <outlet property="graph_key1_check" destination="hSL-vy-dH2" id="e9L-dK-WwO"/>
+                        <outlet property="graph_key2_check" destination="YhG-6r-Ved" id="I5V-c8-iGY"/>
+                        <outlet property="startday_check" destination="w48-1m-uJd" id="xkb-MC-2LF"/>
                         <segue destination="Veh-G8-xpT" kind="show" identifier="go-ana-1" id="7WY-Mb-1fv"/>
                     </connections>
                 </viewController>
@@ -5705,12 +5814,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-1" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
-                                <rect key="frame" x="27" y="121" width="360" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="XRr-Cn-bvx"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="棒グラフ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-Pw-1As">
                                 <rect key="frame" x="156" y="130.5" width="99" height="20"/>
                                 <constraints>
@@ -5718,16 +5821,22 @@
                                     <constraint firstAttribute="width" constant="99" id="ugv-WI-Ezm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-1" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
+                                <rect key="frame" x="27" y="121" width="360" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="XRr-Cn-bvx"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="dMw-w5-DOt">
                                 <rect key="frame" x="0.0" y="88" width="414" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="mlf-ER-lQf"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
                                 <rect key="frame" x="27" y="173" width="360" height="80"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-60-kXW">
@@ -5766,6 +5875,9 @@
                                 <rect key="frame" x="151.5" y="741" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="back" destination="Veh-G8-xpT" eventType="touchUpInside" id="Y4U-vx-gSy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BHU-6c-4Kz"/>
@@ -5801,6 +5913,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="分析" id="Kfu-DB-YJG"/>
+                    <connections>
+                        <outlet property="grapf_kind" destination="KDm-Pw-1As" id="gj0-aJ-Y0M"/>
+                        <outlet property="graph_titile" destination="N2A-60-kXW" id="62k-ZQ-Urp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5s-AL-eMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5840,7 +5956,7 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <image name="w_rectangle" width="135" height="36"/>
         <image name="w_rectangle-curbed_NoLine" width="328" height="150"/>
-        <image name="w_rectangle_curbed_L" width="322" height="42"/>
+        <image name="w_rectangle_curbed_Shadow" width="309" height="83"/>
         <image name="w_rectangle_curbshadow" width="328" height="44"/>
         <image name="👑" width="18" height="19"/>
         <systemColor name="labelColor">
