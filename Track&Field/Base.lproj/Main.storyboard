@@ -268,13 +268,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="履歴" id="hdJ-UM-dzz"/>
                     <connections>
-                        <outlet property="day_date" destination="Crd-Dj-qrq" id="hqF-EM-Gng"/>
                         <outlet property="month" destination="cT8-q1-rUf" id="dKd-xi-gFE"/>
                         <outlet property="table_view" destination="TVJ-CF-1k0" id="0G6-fU-57l"/>
-                        <outlet property="today_pain" destination="Unf-Ir-dcr" id="Nme-By-p6T"/>
-                        <outlet property="today_point" destination="kfW-Kt-bqe" id="k5q-Lt-WiN"/>
-                        <outlet property="todey_distance" destination="vKD-Ir-Zl7" id="S2b-JY-dim"/>
-                        <outlet property="todoy_mene" destination="8Xn-uX-EZG" id="XJ1-nw-Ohr"/>
                         <outlet property="year" destination="Vb8-Fu-k23" id="nWH-K5-1Dm"/>
                         <segue destination="dT4-KX-L6u" kind="show" identifier="go-his-1" id="Ver-ow-J34"/>
                     </connections>
@@ -816,10 +811,6 @@
                     <connections>
                         <outlet property="date" destination="NIO-rI-JV8" id="uVH-du-N2h"/>
                         <outlet property="day" destination="2co-9z-5f6" id="nkm-t0-Rye"/>
-                        <outlet property="main_mene_distance" destination="uxd-ox-Blv" id="l2u-a5-urm"/>
-                        <outlet property="main_mene_number" destination="QPE-8D-Fcz" id="hcf-V6-rSe"/>
-                        <outlet property="main_mene_pace" destination="YqB-W8-kBY" id="RPy-hn-8da"/>
-                        <outlet property="main_mene_time" destination="QZH-fu-Fb2" id="dbZ-lB-rrF"/>
                         <outlet property="maxtemper" destination="BrO-ec-Vzf" id="ti1-WJ-wsb"/>
                         <outlet property="mintemper" destination="pYo-Xg-dnH" id="jGA-OE-n6w"/>
                         <outlet property="month" destination="qDZ-EC-EOi" id="mkE-oI-CQc"/>
@@ -1658,7 +1649,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="ランキング一覧" id="b2W-9t-OLF"/>
                     <connections>
-                        <outlet property="first_man" destination="QXK-dD-JuN" id="P4V-cr-rnx"/>
                         <outlet property="month" destination="77t-oQ-doe" id="A0Y-tV-11N"/>
                         <outlet property="ranking" destination="zz2-Aj-Y23" id="HiF-iB-d1Z"/>
                         <outlet property="year" destination="3np-n7-aFl" id="wsW-jd-b4o"/>
@@ -4658,7 +4648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YC2-EB-AMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="704"/>
+            <point key="canvasLocation" x="2387.68115942029" y="703.45982142857144"/>
         </scene>
         <!--痛みを記録-->
         <scene sceneID="5Bj-o4-yVR">
