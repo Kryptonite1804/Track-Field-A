@@ -26,14 +26,18 @@ class Analize_0_ViewController: UIViewController {
     @IBAction func graph_key2() {
     }
     
-    @IBAction func make_graph() {
-    }
-    
     @IBAction func startay() {
     }
     
     @IBAction func endday() {
     }
+    
+    @IBAction func make_graph() {
+        //グラフの日付・要素確認
+        
+        self.performSegue(withIdentifier: "go-ana_1", sender: self)
+    }
+    
     
     /*
     // MARK: - Navigation

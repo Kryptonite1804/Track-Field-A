@@ -43,6 +43,7 @@ class History_1_ViewController: UIViewController {
     }
     
     @IBAction func otherinfo() {
+        self.performSegue(withIdentifier: "go-his-2", sender: self)
     }
     
     

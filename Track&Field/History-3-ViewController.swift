@@ -24,6 +24,7 @@ class History_3_ViewController: UIViewController {
     }
     
     @IBAction func back() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

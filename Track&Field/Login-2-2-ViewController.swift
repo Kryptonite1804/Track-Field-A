@@ -18,6 +18,7 @@ class Login_2_2_ViewController: UIViewController {
     }
     
     @IBAction func cancel_2_2() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func login_2_2() {

@@ -21,6 +21,10 @@ class Login_1_2_ViewController: UIViewController {
     }
     
     @IBAction func register_tapped() {
+        
+        //入力項目の確認...
+        
+        self.performSegue(withIdentifier: "go-1-3", sender: self)
     }
     
     

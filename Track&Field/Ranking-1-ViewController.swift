@@ -43,8 +43,6 @@ class Ranking_1_ViewController: UIViewController {
     @IBOutlet weak var nineth_record: UILabel!
     @IBOutlet weak var tenth_record: UILabel!
     
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

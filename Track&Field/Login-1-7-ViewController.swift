@@ -18,6 +18,9 @@ class Login_1_7_ViewController: UIViewController {
     }
     
     @IBAction func groupjoin_1_7() {
+        //グループ名の確認
+        
+        self.performSegue(withIdentifier: "go-1-8", sender: self)
     }
     
 

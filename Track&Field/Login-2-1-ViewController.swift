@@ -19,6 +19,9 @@ class Login_2_1_ViewController: UIViewController {
     }
     
     @IBAction func login_2_1() {
+        //入力項目の確認
+        
+        self.performSegue(withIdentifier: "go-2-2", sender: self)
     }
     
 

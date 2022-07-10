@@ -18,6 +18,8 @@ class Login_1_4_ViewController: UIViewController {
     }
     
     @IBAction func register_tapped_1_4(){
+        //グループ名確認
+        self.performSegue(withIdentifier: "go-1-5", sender: self)
     }
 
     /*

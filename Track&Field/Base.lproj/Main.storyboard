@@ -4750,6 +4750,9 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.69019607839999997" green="0.69019615649999999" blue="0.69019615649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pain_slider:" destination="DHw-op-Z6D" eventType="valueChanged" id="6Q4-Sj-Jmc"/>
+                                </connections>
                             </slider>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-5T-r6D">
                                 <rect key="frame" x="42" y="640" width="330" height="93"/>
@@ -4779,6 +4782,9 @@
                                 <rect key="frame" x="151.5" y="761" width="111" height="42"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="back" destination="DHw-op-Z6D" eventType="touchUpInside" id="8BC-zA-Ryt"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-Bo-NDE">
                                 <rect key="frame" x="52" y="515.5" width="20" height="19"/>
@@ -4851,6 +4857,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="痛みを記録" id="ocO-I1-fSF"/>
+                    <connections>
+                        <outlet property="pain_writing" destination="0bO-5T-r6D" id="YJQ-SG-CAi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgR-vU-VeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5061,6 +5070,9 @@
                                                 <rect key="frame" x="152" y="687" width="111" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                <connections>
+                                                    <action selector="register" destination="223-iX-i2S" eventType="touchUpInside" id="7F8-K2-Ayn"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="感想" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egC-cI-X2c">
                                                 <rect key="frame" x="67" y="534" width="37" height="22"/>
@@ -5448,6 +5460,7 @@
                         <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
                         <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
                         <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
+                        <outlet property="writing" destination="xJJ-D4-8qU" id="TAk-WE-8Gl"/>
                         <outlet property="writinng_check" destination="ksy-6W-5K4" id="oaD-2l-AbS"/>
                         <segue destination="tWq-zj-VSR" kind="show" identifier="go-record-1" id="iMY-6F-Hy4"/>
                         <segue destination="DHw-op-Z6D" kind="show" identifier="go-record-2" id="yH8-UZ-YIh"/>

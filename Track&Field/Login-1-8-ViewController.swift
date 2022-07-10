@@ -18,9 +18,11 @@ class Login_1_8_ViewController: UIViewController {
     }
     
     @IBAction func cancel_1_8() {
+        self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func groupjoin_1_8() {
+        self.performSegue(withIdentifier: "go-1-6", sender: self)
     }
     
     /*

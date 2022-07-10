@@ -16,9 +16,11 @@ class Login_1_3_ViewController: UIViewController {
     }
     
     @IBAction func groupmake_1_3() {
+        self.performSegue(withIdentifier: "go-1-4", sender: self)
     }
     
     @IBAction func groupjoin_1_3(){
+        self.performSegue(withIdentifier: "go-1-7", sender: self)
     }
 
     /*

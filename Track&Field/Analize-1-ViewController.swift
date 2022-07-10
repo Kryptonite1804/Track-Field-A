@@ -20,6 +20,7 @@ class Analize_1_ViewController: UIViewController {
     }
     
     @IBAction func back() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

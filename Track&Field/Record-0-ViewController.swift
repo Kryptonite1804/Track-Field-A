@@ -26,6 +26,9 @@ class Record_0_ViewController: UIViewController {
     @IBOutlet weak var tired_check: UIImageView!
     @IBOutlet weak var writinng_check: UIImageView!
     
+    @IBOutlet weak var writing: UITextView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,7 @@ class Record_0_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func parctice_record() {
+        self.performSegue(withIdentifier: "go-record-1", sender: self)
     }
     
     @IBAction func place_feild_record() {
@@ -42,6 +46,7 @@ class Record_0_ViewController: UIViewController {
     }
     
     @IBAction func pain_record() {
+        self.performSegue(withIdentifier: "go-record-2", sender: self)
     }
     
     @IBAction func eat_time_record() {
@@ -53,6 +58,8 @@ class Record_0_ViewController: UIViewController {
     @IBAction func tired_record() {
     }
     
+    @IBAction func register() {
+    }
     
     /*
     // MARK: - Navigation

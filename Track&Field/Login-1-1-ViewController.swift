@@ -19,6 +19,7 @@ class Login_1_1_ViewController: UIViewController {
     }
     
     @IBAction func afterdo_1_1(){
+        self.navigationController?.popViewController(animated: true)
     }
     
 

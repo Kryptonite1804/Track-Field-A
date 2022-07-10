@@ -9,13 +9,21 @@ import UIKit
 
 class Record_2_ViewController: UIViewController {
 
+    @IBOutlet weak var pain_writing: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func pain_slider(_ sender: UISlider) {
+    }
+    
+    @IBAction func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

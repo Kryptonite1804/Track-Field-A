@@ -25,9 +25,11 @@ class History_2_ViewController: UIViewController {
     }
     
     @IBAction func pain() {
+        self.performSegue(withIdentifier: "go-his-3", sender: self)
     }
     
     @IBAction func back() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /*

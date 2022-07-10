@@ -33,6 +33,7 @@ class Record_1_ViewController: UIViewController {
     
     @IBAction func main_mene_add() {
     }
+    
     @IBAction func down_time_record() {
     }
     

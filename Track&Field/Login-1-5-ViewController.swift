@@ -19,6 +19,7 @@ class Login_1_5_ViewController: UIViewController {
     }
     
     @IBAction func next_1_5() {
+        self.performSegue(withIdentifier: "go-1-6", sender: self)
     }
 
     /*
