@@ -9,12 +9,13 @@ import UIKit
 
 class History_2_ViewController: UIViewController {
 
-    @IBOutlet weak var today_place_feild: UIImageView!
+    @IBOutlet weak var today_place_feild: UILabel!
     @IBOutlet weak var today_point: UILabel!
     @IBOutlet weak var today_pain: UILabel!
     @IBOutlet weak var today_eat_time: UILabel!
     @IBOutlet weak var today_sleep: UILabel!
     @IBOutlet weak var today_tired: UILabel!
+    @IBOutlet weak var today_detail: UITextView!
     
     
     override func viewDidLoad() {
@@ -23,10 +24,10 @@ class History_2_ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func back() {
+    @IBAction func pain() {
     }
     
-    @IBAction func pain() {
+    @IBAction func back() {
     }
     
     /*

@@ -10,6 +10,7 @@ import UIKit
 class History_3_ViewController: UIViewController {
 
     @IBOutlet weak var pain_number: UILabel!
+    @IBOutlet weak var today_detail: UITextView!
     
     
     override func viewDidLoad() {

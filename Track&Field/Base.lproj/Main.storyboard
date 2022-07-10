@@ -270,6 +270,7 @@
                     <connections>
                         <outlet property="day_date" destination="Crd-Dj-qrq" id="hqF-EM-Gng"/>
                         <outlet property="month" destination="cT8-q1-rUf" id="dKd-xi-gFE"/>
+                        <outlet property="table_view" destination="TVJ-CF-1k0" id="0G6-fU-57l"/>
                         <outlet property="today_pain" destination="Unf-Ir-dcr" id="Nme-By-p6T"/>
                         <outlet property="today_point" destination="kfW-Kt-bqe" id="k5q-Lt-WiN"/>
                         <outlet property="todey_distance" destination="vKD-Ir-Zl7" id="S2b-JY-dim"/>
@@ -822,6 +823,7 @@
                         <outlet property="maxtemper" destination="BrO-ec-Vzf" id="ti1-WJ-wsb"/>
                         <outlet property="mintemper" destination="pYo-Xg-dnH" id="jGA-OE-n6w"/>
                         <outlet property="month" destination="qDZ-EC-EOi" id="mkE-oI-CQc"/>
+                        <outlet property="table_view" destination="mCS-eI-ksv" id="hYN-Uz-l0J"/>
                         <outlet property="todat_up_time" destination="lHK-2s-829" id="QfL-FH-8vt"/>
                         <outlet property="today_down_distance" destination="ysU-3R-IzJ" id="Mwf-Jm-sZI"/>
                         <outlet property="today_down_time" destination="89P-0W-BsX" id="iuY-oB-7nn"/>
@@ -1171,9 +1173,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="その他の情報" id="wZh-Yj-LW7"/>
                     <connections>
+                        <outlet property="today_detail" destination="67G-7p-PCd" id="7Lt-Wd-up7"/>
                         <outlet property="today_eat_time" destination="Yi1-cq-4bN" id="NPY-RJ-NZf"/>
                         <outlet property="today_pain" destination="8cW-Mf-BoN" id="SRK-IM-ACp"/>
-                        <outlet property="today_place_feild" destination="azJ-eM-39r" id="GtB-59-O0b"/>
+                        <outlet property="today_place_feild" destination="otS-MN-IZ7" id="VHb-Tc-fAw"/>
                         <outlet property="today_point" destination="Z1Y-L4-H8Q" id="UZk-eU-oVo"/>
                         <outlet property="today_sleep" destination="RFi-2E-Hcn" id="SvZ-sW-NFq"/>
                         <outlet property="today_tired" destination="80u-KX-66Q" id="1Ls-FT-9aR"/>
@@ -1381,6 +1384,7 @@
                     <navigationItem key="navigationItem" title="痛み" id="spe-aw-cFp"/>
                     <connections>
                         <outlet property="pain_number" destination="f6j-T6-VNl" id="tCK-qs-kcN"/>
+                        <outlet property="today_detail" destination="jb4-bH-uML" id="GUS-Kh-kAo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moc-8H-1wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -5701,13 +5705,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="dMw-w5-DOt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="3" id="mlf-ER-lQf"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_Ex" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-1" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
                                 <rect key="frame" x="27" y="121" width="360" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="XRr-Cn-bvx"/>
@@ -5723,6 +5721,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="dMw-w5-DOt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="mlf-ER-lQf"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
                                 <rect key="frame" x="27" y="173" width="360" height="80"/>
                             </imageView>
@@ -5819,7 +5823,6 @@
         <image name="p_line_" width="38" height="38"/>
         <image name="p_line_bold" width="375" height="3"/>
         <image name="p_line_light" width="320" height="1"/>
-        <image name="p_rectangle_curbed_Ex" width="332" height="48"/>
         <image name="p_rectangle_curbed_L" width="162" height="48"/>
         <image name="p_rectangle_curbed_M" width="120" height="48"/>
         <image name="p_rectangle_curbed_S" width="112" height="38"/>

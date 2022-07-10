@@ -11,12 +11,16 @@ class History_0_ViewController: UIViewController {
 
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
+    
+    @IBOutlet weak var table_view: UITableView!
+    
+    /*
     @IBOutlet weak var day_date: UILabel!
     @IBOutlet weak var todoy_mene: UILabel!
     @IBOutlet weak var todey_distance: UILabel!
     @IBOutlet weak var today_point: UILabel!
     @IBOutlet weak var today_pain: UILabel!
-    
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
