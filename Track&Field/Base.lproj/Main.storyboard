@@ -4405,12 +4405,6 @@
                                                     <constraint firstAttribute="height" constant="33" id="BLG-XS-xsd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <menu key="menu" id="0z1-PS-uC1">
-                                                    <children>
-                                                        <command title="Item 1" id="uPZ-wr-EFl"/>
-                                                        <command title="Item 2" id="UTM-9b-5rV"/>
-                                                    </children>
-                                                </menu>
                                                 <state key="normal" title="JOG">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -4647,10 +4641,14 @@
                     <navigationItem key="navigationItem" title="メニューを記録" id="ROu-1F-HYH"/>
                     <size key="freeformSize" width="415" height="1079"/>
                     <connections>
+                        <outlet property="downTimeButton" destination="FHE-Vi-QAr" id="Z0C-Kv-45l"/>
                         <outlet property="down_distance_record" destination="hVn-S9-JAo" id="SAQ-MX-w4a"/>
                         <outlet property="main_mene_record" destination="y4c-SN-GmE" id="0tJ-VV-NQK"/>
+                        <outlet property="practiceTypeButton" destination="86n-Z0-FZZ" id="mfM-m8-XFh"/>
                         <outlet property="practice_comment_record" destination="pjS-fL-IXs" id="yOP-Rq-Byk"/>
+                        <outlet property="teamButton" destination="Ck5-sS-7Wy" id="fCu-OD-asD"/>
                         <outlet property="total_distance_record" destination="YGs-bd-pdu" id="r1j-YT-mgF"/>
+                        <outlet property="upTimeButton" destination="jbY-T8-t8d" id="dgm-MS-97c"/>
                         <outlet property="up_distance_record" destination="47o-he-Uob" id="nzB-MA-JRN"/>
                     </connections>
                 </viewController>

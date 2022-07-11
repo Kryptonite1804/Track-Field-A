@@ -45,7 +45,6 @@ class Record_0_ViewController: UIViewController {
                 let body_Array = [["練習場所タイプ","placeType"],["練習評価","practicePoint"],["食事","mealTimeButton"],["就寝時刻","sleepStart"],["起床時刻","sleepEnd"],["疲労度","tiredRevel"]]
                 let placeType_Array = ["トラック","ロード","土","草地","その他"]
                 let practicePoint_Array = ["★★★★★","★★★★☆","★★★☆☆","★★☆☆☆","★☆☆☆☆","☆☆☆☆☆"]
-        
                 let mealTime_Array = ["0回","1回","2回","3回","4回","5回"]
                 let sleepStart_Array = ["20:00","20:30","21:00","21:30","22:00","22:30","23:00","23:30","24:00","24:30","25:00","25:30","26:00"]
                 let sleepEnd_Array = ["04:00","04:30","05:00","05:30","06:00","06:30","07:00","07:30","08:00","8:30","9:00","9:30"]
