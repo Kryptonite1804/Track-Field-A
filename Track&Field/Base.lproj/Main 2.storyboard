@@ -5257,7 +5257,7 @@
                                                     <constraint firstAttribute="height" constant="20" id="4Ng-Qp-oK2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="06:30">
+                                                <state key="normal" title="23:00 ~ 06:30">
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -5293,26 +5293,6 @@
                                                     <action selector="pain_record" destination="223-iX-i2S" eventType="touchUpInside" id="76D-EK-MIC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oef-Yc-dlf">
-                                                <rect key="frame" x="251.5" y="405.5" width="66.5" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="riu-fg-Xtn"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="22:00">
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                    <color key="baseForegroundColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </buttonConfiguration>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-Ex-hYu">
-                                                <rect key="frame" x="312" y="412.5" width="11" height="18"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="18" id="sws-Ud-KGH"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -5361,7 +5341,6 @@
                                             <constraint firstItem="z0D-bB-hS7" firstAttribute="centerY" secondItem="fq9-EU-5i0" secondAttribute="centerY" id="FsD-mL-Vbw"/>
                                             <constraint firstItem="yWI-t6-t4P" firstAttribute="centerY" secondItem="Cqv-bJ-tif" secondAttribute="centerY" id="G39-f0-EAn"/>
                                             <constraint firstAttribute="trailing" secondItem="ZIc-7m-yxU" secondAttribute="trailing" constant="24" id="HSv-sf-DHB"/>
-                                            <constraint firstItem="wE8-Dc-D4G" firstAttribute="trailing" secondItem="oef-Yc-dlf" secondAttribute="trailing" constant="55" id="Hfg-Lx-kzb"/>
                                             <constraint firstItem="z5i-82-Eys" firstAttribute="centerY" secondItem="JaZ-Ou-zc1" secondAttribute="centerY" constant="-3" id="Hg9-st-gSd"/>
                                             <constraint firstItem="13W-J1-TV7" firstAttribute="top" secondItem="rCr-px-Owj" secondAttribute="top" constant="20" id="HlK-CK-22V"/>
                                             <constraint firstItem="gRw-HS-4sc" firstAttribute="leading" secondItem="ihb-qK-TAb" secondAttribute="leading" id="IC8-DF-1ar"/>
@@ -5428,7 +5407,6 @@
                                             <constraint firstItem="yWI-t6-t4P" firstAttribute="leading" secondItem="Cqv-bJ-tif" secondAttribute="trailing" constant="5" id="rY0-L9-g4G"/>
                                             <constraint firstItem="JaZ-Ou-zc1" firstAttribute="top" secondItem="kW1-Qn-wr1" secondAttribute="bottom" constant="15" id="sUe-tk-u7q"/>
                                             <constraint firstItem="gRw-HS-4sc" firstAttribute="bottom" secondItem="ihb-qK-TAb" secondAttribute="bottom" id="so9-cx-tom"/>
-                                            <constraint firstItem="Eh4-Ex-hYu" firstAttribute="centerY" secondItem="wE8-Dc-D4G" secondAttribute="centerY" id="ta5-rh-OwD"/>
                                             <constraint firstAttribute="trailing" secondItem="gRw-HS-4sc" secondAttribute="trailing" constant="24" id="tgD-K3-UzX"/>
                                             <constraint firstItem="fq9-EU-5i0" firstAttribute="centerY" secondItem="ZIc-7m-yxU" secondAttribute="centerY" constant="-3" id="tsQ-uA-NEw"/>
                                             <constraint firstItem="5U3-o4-E96" firstAttribute="centerY" secondItem="HNh-u0-cl5" secondAttribute="centerY" constant="1.5" id="u0i-mZ-x4M"/>
@@ -5441,8 +5419,6 @@
                                             <constraint firstItem="i2O-kD-f5Z" firstAttribute="top" secondItem="gRw-HS-4sc" secondAttribute="bottom" constant="15" id="x0G-3r-nqT"/>
                                             <constraint firstItem="oew-bf-5VG" firstAttribute="leading" secondItem="VRb-d4-0vS" secondAttribute="trailing" constant="20" id="y2u-GB-J4S"/>
                                             <constraint firstItem="jjj-qv-YGS" firstAttribute="top" secondItem="hha-PB-J5E" secondAttribute="bottom" constant="15" id="yJt-MN-r9z"/>
-                                            <constraint firstItem="oef-Yc-dlf" firstAttribute="centerY" secondItem="wE8-Dc-D4G" secondAttribute="centerY" id="yyc-gO-xIe"/>
-                                            <constraint firstItem="wE8-Dc-D4G" firstAttribute="trailing" secondItem="Eh4-Ex-hYu" secondAttribute="trailing" constant="50" id="z0k-y8-cAM"/>
                                             <constraint firstItem="bCz-g9-u58" firstAttribute="trailing" secondItem="oew-bf-5VG" secondAttribute="trailing" constant="18" id="zJ3-oC-lHF"/>
                                         </constraints>
                                     </view>
@@ -5472,17 +5448,14 @@
                         <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
                         <outlet property="eat_time_check" destination="Osb-cA-2Um" id="OjA-5c-1kK"/>
                         <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
-                        <outlet property="mealTimeButton" destination="o1m-Eq-8oa" id="Vlz-JT-qyL"/>
+                        <outlet property="mealButton" destination="o1m-Eq-8oa" id="DUr-dm-3TA"/>
                         <outlet property="mintemper" destination="hha-PB-J5E" id="NkZ-Bx-Wwo"/>
                         <outlet property="month" destination="vy2-uT-hKc" id="lIy-vL-nhv"/>
                         <outlet property="pain_check" destination="Cqv-bJ-tif" id="bZE-MX-2sl"/>
                         <outlet property="placeTypeButton" destination="sNn-nG-CIA" id="KXU-Zx-sFF"/>
                         <outlet property="place_feild_check" destination="eNO-0N-rRq" id="zUg-aG-0E0"/>
                         <outlet property="point_check" destination="Yqx-2d-l2l" id="HPF-3J-UQ6"/>
-                        <outlet property="practicePonitButton" destination="6r8-qs-2iX" id="RMr-dy-DEQ"/>
                         <outlet property="practice_mene_check" destination="0b6-Jo-6U9" id="mfk-v6-67G"/>
-                        <outlet property="sleepEndButton" destination="wE8-Dc-D4G" id="BjX-Zj-sVX"/>
-                        <outlet property="sleepStartButton" destination="oef-Yc-dlf" id="jQo-Uy-1hx"/>
                         <outlet property="sleep_check" destination="mZ9-Fg-gkj" id="HFt-Z4-OVd"/>
                         <outlet property="tiredRevelButton" destination="z0D-bB-hS7" id="p5h-js-9Uj"/>
                         <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
