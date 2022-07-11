@@ -16,6 +16,8 @@ class Record_1_ViewController: UIViewController {
     @IBOutlet weak var total_distance_record: UITextField!
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

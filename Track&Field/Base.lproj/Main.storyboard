@@ -5261,7 +5261,8 @@
                                                     <color key="titleColor" red="0.68235294120000001" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="sleep_record" destination="223-iX-i2S" eventType="touchUpInside" id="vBc-NS-B1h"/>
+                                                    <action selector="sleep_end_record" destination="223-iX-i2S" eventType="touchUpInside" id="Zup-ye-nZ6"/>
+                                                    <action selector="sleep_start_record" destination="223-iX-i2S" eventType="touchUpInside" id="YYV-pc-761"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0D-bB-hS7">

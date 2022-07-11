@@ -45,9 +45,10 @@ class Record_0_ViewController: UIViewController {
                 let body_Array = [["練習場所タイプ","placeType"],["練習評価","practicePoint"],["食事","mealTimeButton"],["就寝時刻","sleepStart"],["起床時刻","sleepEnd"],["疲労度","tiredRevel"]]
                 let placeType_Array = ["トラック","ロード","土","草地","その他"]
                 let practicePoint_Array = ["★★★★★","★★★★☆","★★★☆☆","★★☆☆☆","★☆☆☆☆","☆☆☆☆☆"]
+        
                 let mealTime_Array = ["0回","1回","2回","3回","4回","5回"]
-                let sleepStart_Array =["20:00","20:30","21:00","21:30","22:00","22:30","23:00","23:30","24:00","24:30","25:00","25:30","26:00"]
-                let sleepEnd_Array =["04:00","04:30","05:00","05:30","06:00","06:30","07:00","07:30","08:00","8:30","9:00","9:30"]
+                let sleepStart_Array = ["20:00","20:30","21:00","21:30","22:00","22:30","23:00","23:30","24:00","24:30","25:00","25:30","26:00"]
+                let sleepEnd_Array = ["04:00","04:30","05:00","05:30","06:00","06:30","07:00","07:30","08:00","8:30","9:00","9:30"]
                 let tiredRevel_Array = ["ひどい　1","かなりある　2","普通　3","ややある　4","なし　5",]
         
                 var detail_Array = [String]()
@@ -56,19 +57,24 @@ class Record_0_ViewController: UIViewController {
                     let bodyEN_String = body_Array[m][1]
                     
                     if m == 0 {
-                        aboutButton = mealButton
-                        detail_Array = excerciseType_Array
-                    } else if m == 1 {
-                        
-                        aboutButton = tiredRevelButton
-                        detail_Array = team_Array
-                    } else if m == 2 {
                         aboutButton = placeTypeButton
                         detail_Array = placeType_Array
+                    } else if m == 1 {
+                        aboutButton = practicePonitButton
+                        detail_Array = practicePoint_Array
+                    } else if m == 2 {
+                        aboutButton = mealTimeButton
+                        detail_Array = mealTime_Array
+                    }else if m == 3 {
+                        aboutButton = sleepStartButton
+                        detail_Array = sleepStart_Array
+                    }else if m == 4 {
+                        aboutButton = sleepEndButton
+                        detail_Array = sleepEnd_Array
+                    }else if m == 5 {
+                        aboutButton = tiredRevelButton
+                        detail_Array = tiredRevel_Array
                     }
-                    
-                    
-                    
                     
                     
                     aboutButton.setTitle(bodyJP_String, for: .normal)
@@ -98,14 +104,17 @@ class Record_0_ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func parctice_record() {
         self.performSegue(withIdentifier: "go-record-1", sender: self)
     }
     
     @IBAction func place_feild_record() {
+        aboutButton = placeTypeButton
     }
     
     @IBAction func point_record() {
+        aboutButton = practicePonitButton
     }
     
     @IBAction func pain_record() {
@@ -113,12 +122,19 @@ class Record_0_ViewController: UIViewController {
     }
     
     @IBAction func eat_time_record() {
+        aboutButton = mealTimeButton
     }
     
-    @IBAction func sleep_record() {
+    @IBAction func sleep_start_record() {
+        aboutButton = sleepEndButton
+    }
+    
+    @IBAction func sleep_end_record() {
+        aboutButton = sleepEndButton
     }
     
     @IBAction func tired_record() {
+        aboutButton = tiredRevelButton
     }
     
     @IBAction func register() {
