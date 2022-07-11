@@ -28,9 +28,13 @@ class Record_0_ViewController: UIViewController {
     
     @IBOutlet weak var writing: UITextView!
     
-    @IBOutlet weak var mealButton: UIButton!
-    @IBOutlet weak var tiredRevelButton: UIButton!
     @IBOutlet weak var placeTypeButton: UIButton!
+    @IBOutlet weak var practicePonitButton: UIButton!
+    @IBOutlet weak var mealButton: UIButton!
+    @IBOutlet weak var sleepStartButton: UIButton!
+    @IBOutlet weak var sleepEndButton: UIButton!
+    @IBOutlet weak var tiredRevelButton: UIButton!
+    
     
     var aboutButton = UIButton()
     
@@ -38,7 +42,7 @@ class Record_0_ViewController: UIViewController {
         super.viewDidLoad()
         
                 
-                let body_Array = [["練習タイプ","excerciseType"],["チーム","team"],["練習場所タイプ","placeType"]]
+                let body_Array = [["練習タイプ","excerciseType"],["練習評価","practicePoint"],["練習場所タイプ","placeType"],[]]
                 let excerciseType_Array = ["JOG","LSD","集団走","スピード練","大会","記録会","補強","その他"]
                 let team_Array = ["A","B","C"]
                 let placeType_Array = ["トラック","ロード","校庭","その他"]
