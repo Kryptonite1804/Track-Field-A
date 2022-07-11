@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fY0-Ga-7Ht">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -2706,9 +2706,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="ZFY-RV-RCG"/>
                     <connections>
+                        <outlet property="email_Label" destination="aRa-bU-t3j" id="JRt-O5-AgP"/>
                         <outlet property="email_TF" destination="Xpb-qQ-aqx" id="tRs-nf-cur"/>
+                        <outlet property="password_Label" destination="fkC-zd-oOJ" id="24Q-fN-LSJ"/>
                         <outlet property="password_TF" destination="wHG-Gm-Njp" id="S4U-b4-iqe"/>
+                        <outlet property="repassword_Label" destination="Lhw-z0-RpE" id="hLQ-Qw-zZO"/>
                         <outlet property="repassword_TF" destination="lmP-5K-dOk" id="vWK-aY-TUi"/>
+                        <outlet property="username_Label" destination="cFy-j8-ycu" id="n6b-qf-OPk"/>
                         <outlet property="username_TF" destination="Kle-CT-Yq7" id="eEF-M5-ARj"/>
                         <segue destination="PR0-mI-rE2" kind="show" identifier="go-1-3" id="HPb-lg-gpn"/>
                     </connections>
