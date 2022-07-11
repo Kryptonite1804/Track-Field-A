@@ -5444,13 +5444,16 @@
                         <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
                         <outlet property="eat_time_check" destination="Osb-cA-2Um" id="OjA-5c-1kK"/>
                         <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
+                        <outlet property="mealButton" destination="o1m-Eq-8oa" id="DUr-dm-3TA"/>
                         <outlet property="mintemper" destination="hha-PB-J5E" id="NkZ-Bx-Wwo"/>
                         <outlet property="month" destination="vy2-uT-hKc" id="lIy-vL-nhv"/>
                         <outlet property="pain_check" destination="Cqv-bJ-tif" id="bZE-MX-2sl"/>
+                        <outlet property="placeTypeButton" destination="sNn-nG-CIA" id="KXU-Zx-sFF"/>
                         <outlet property="place_feild_check" destination="eNO-0N-rRq" id="zUg-aG-0E0"/>
                         <outlet property="point_check" destination="Yqx-2d-l2l" id="HPF-3J-UQ6"/>
                         <outlet property="practice_mene_check" destination="0b6-Jo-6U9" id="mfk-v6-67G"/>
                         <outlet property="sleep_check" destination="mZ9-Fg-gkj" id="HFt-Z4-OVd"/>
+                        <outlet property="tiredRevelButton" destination="z0D-bB-hS7" id="p5h-js-9Uj"/>
                         <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
                         <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
                         <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
