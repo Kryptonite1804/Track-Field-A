@@ -35,6 +35,12 @@ class Record_0_ViewController: UIViewController {
     @IBOutlet weak var sleepEndButton: UIButton!
     @IBOutlet weak var tiredRevelButton: UIButton!
     
+    let createdDate_Formatter = DateFormatter()  //DP
+    var createdDate: String = ""
+    var todayMonth: String = ""
+    var todayDay: String = ""
+    var todayYobi: String = ""
+    
     
     var aboutButton = UIButton()
     
@@ -100,7 +106,24 @@ class Record_0_ViewController: UIViewController {
                     
                     
                 }
-
+        
+        //date
+        let today = Date()
+        createdDate_Formatter.dateFormat = "yyyy/MM/dd/EEEE"//2022/07/12/sunday 履歴のための現在時刻の取得
+        createdDate = createdDate_Formatter.string(from: today)
+        createdDate_Formatter.dateFormat = "M"
+        todayMonth = createdDate_Formatter.string(from: today)
+        createdDate_Formatter.dateFormat = "d"
+        todayDay = createdDate_Formatter.string(from: today)
+        createdDate_Formatter.dateFormat = "EEEE"
+        todayYobi = createdDate_Formatter.string(from: today)
+        
+        month.text = todayMonth
+        day.text = todayDay
+        date.text = todayYobi
+       // print("日時デフォルト値: \(createdDate)")
+        
+        
         // Do any additional setup after loading the view.
     }
     

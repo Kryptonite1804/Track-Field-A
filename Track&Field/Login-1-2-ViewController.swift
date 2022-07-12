@@ -69,7 +69,18 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
                                                    selector: #selector(keyboardWillHide),
                                                    name: UIResponder.keyboardWillHideNotification,
                                                    object: nil)
+        email_Label.text = ""
+        email_Label.layer.cornerRadius = 30
+        
 
+        
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
