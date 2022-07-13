@@ -6,23 +6,172 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class Login_1_8_ViewController: UIViewController {
 
     @IBOutlet weak var groupID_1_8: UILabel!
     
+    var activityIndicatorView = UIActivityIndicatorView()  //AIV
+    
+    var groupName :String = ""
+    var groupUid :String = ""
+    var userUid :String = ""
+    var useremail :String = ""
+    var username :String = ""
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        self.navigationItem.hidesBackButton = true
+        // Do any additional setup after loading the view.
+        
+        self.groupName = UserDefaults.standard.string(forKey: "groupName1") ?? "デフォルト値"
+        
+        self.groupUid = UserDefaults.standard.string(forKey: "groupUid1") ?? "デフォルト値"
+        self.username = UserDefaults.standard.string(forKey: "username") ?? "デフォルト値"
+        
+        
+        
+        
+        groupID_1_8.text = groupName
+        
+        //AIV
+        activityIndicatorView.center = view.center
+        activityIndicatorView.style = .whiteLarge
+        activityIndicatorView.color = .darkGray
+        activityIndicatorView.hidesWhenStopped = true
+        view.addSubview(activityIndicatorView)
+        
         // Do any additional setup after loading the view.
     }
+    
+    
+    //Alert
+    var alertController: UIAlertController!
+    
+    //Alert
+    func alert(title:String, message:String) {
+        alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true)
+    }
+    
     
     @IBAction func cancel_1_8() {
         self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func groupjoin_1_8() {
-        self.performSegue(withIdentifier: "go-1-6", sender: self)
+        
+        
+            
+            activityIndicatorView.startAnimating()  //AIV
+            
+            Auth.auth().addStateDidChangeListener{ (auth, user) in
+
+                guard let user = user else {
+                    
+                    return
+                }
+                
+                print("ここ！！！！")
+                print(user.uid)
+                
+                self.userUid = user.uid
+                self.useremail = user.email!
+                
+                //Adultusersコレクション内の情報を取得
+                        
+                        
+                        let docRef2 = self.db.collection("Group").document("\(self.groupUid)")
+
+                        docRef2.getDocument { (document, error) in
+                            if let document = document, document.exists {
+                                let documentdata2 = document.data().map(String.init(describing:)) ?? "nil"
+                                print("Document data2: \(documentdata2)")
+                                
+                                
+                                var memberemailArray = document.data()!["memberemail"] as? Array<String> ?? []
+                                var membernameArray = document.data()!["membername"] as? Array<String> ?? []
+                                
+                                print("memberemail_Array: \(memberemailArray)")
+                                print("membername_Array: \(membernameArray)")
+                            
+                                memberemailArray.append(self.useremail)
+                                membernameArray.append(self.username)
+                                
+                        let ref = self.db.collection("Group")
+                                ref.document(self.groupUid).updateData( //ここでgroupのuidをランダム作成
+                                    ["memberemail" : memberemailArray,
+                                     "membername" : membernameArray]
+                                )
+                                
+                        { err in
+                            if let err = err {
+                                //失敗
+
+                            } else {
+                                //成功
+                                print("succeed")
+                                
+                                //ここから
+                                let ref3 = self.db.collection("AdultUsers")
+                                ref3.document(self.userUid).setData( //ここでgroupのuidをランダム作成
+                                            ["groupUid" : self.groupUid,
+                                             "username" : self.username])
+                                
+                                
+                                { err in
+                                    if let err = err {
+                                        //失敗
+                                        print("失敗")
+                                        
+
+                                    } else {
+                                        
+                                        //成功
+                                        print("succeed22")
+                                        self.activityIndicatorView.stopAnimating()  //AIV
+                                        self.performSegue(withIdentifier: "go-1-6", sender: self)
+                                    }
+                                }
+                                //ここから
+                                
+                            }
+                        }
+                        
+                            } else {
+                                print("Document does not exist")
+                                
+                                
+                                //MyAlert
+                                //poptoroot
+                                let alert: UIAlertController = UIAlertController(title: "エラー",message: "エラーが発生しました。\nログインし直してください。", preferredStyle: UIAlertController.Style.alert)
+                                let confilmAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+                                    (action: UIAlertAction!) -> Void in
+                                    
+                                    self.navigationController?.popToRootViewController(animated: true)
+                                    
+                                })
+                                
+                                alert.addAction(confilmAction)
+                                
+                                self.activityIndicatorView.stopAnimating()
+                                //alertを表示
+                                self.present(alert, animated: true, completion: nil)
+                                
+                                
+                            }
+                        }
+                    
+                    
+                
+                }
+        
     }
     
     /*

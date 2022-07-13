@@ -4,6 +4,7 @@
 //
 //  Created by 佐野生樹 on 2022/06/19.
 //
+//済・要確認
 
 import UIKit
 import Firebase //FB
@@ -120,7 +121,7 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
             
-            if UIScreen.main.bounds.size.height - (460+44) < keyboardHeight + 20 {
+            if UIScreen.main.bounds.size.height - (460+44) < keyboardHeight + 10 {
             
                 self.bottom_Const.constant = keyboardHeight + 10
                 
@@ -177,7 +178,7 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
                 print("error: password not found")
                 
             } else if repass == "" {
-                alert(title: "パスワードが\n正しく入力されていません", message: "パスワードを\nもう一度入れ直してください。")
+                alert(title: "再入力パスワードが\n正しく入力されていません", message: "再入力パスワードを\nもう一度入れ直してください。")
                 print("error: repassword not found")
                 
             } else if pass != repass {
@@ -193,7 +194,7 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
                 print("succeed: signup_createUser")
                     
                     
-                    UserDefaults.standard.set(self.username, forKey: "username")
+                    UserDefaults.standard.set(self.username, forKey: "Setup_username")
                     self.activityIndicatorView.stopAnimating()  //AIV
                     
                     //MARK: ★navigation遷移

@@ -14,14 +14,14 @@ import FirebaseFirestore
 
 class Login_1_5_ViewController: UIViewController {
 
-    @IBOutlet weak var groupID_1_5: UILabel!
+    @IBOutlet weak var groupID_Label: UILabel!
     
     var activityIndicatorView = UIActivityIndicatorView()
     
     var groupname: String = ""
     var groupID: String = ""
     var username: String = ""
-    var mode: String = ""
+//    var mode: String = ""
     let db = Firestore.firestore()
     var checkNumber: Int = 0
     
@@ -49,16 +49,16 @@ class Login_1_5_ViewController: UIViewController {
         let groupIDLetterArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
         let groupIDLetter1 = groupIDLetterArray [Int.random(in: 0...51)]
         let groupIDLetter2 = groupIDLetterArray [Int.random(in: 0...51)]
-        let groupnameload = UserDefaults.standard.string(forKey: "groupname") ?? "デフォルト値"
-        let usernameload = UserDefaults.standard.string(forKey: "username") ?? "デフォルト値"
-        let modeload = UserDefaults.standard.string(forKey: "mode") ?? "デフォルト値"
+        let groupnameload = UserDefaults.standard.string(forKey: "Setup_groupname") ?? "デフォルト値"
+        let usernameload = UserDefaults.standard.string(forKey: "Setup_username") ?? "デフォルト値"
+//        let modeload = UserDefaults.standard.string(forKey: "mode") ?? "デフォルト値"
         groupname = groupnameload
         username = usernameload
-        mode = modeload
+//        mode = modeload
         
-        groupID = "\(groupIDLetter1)\(groupIDLetter2)\(groupIDNumber)"
+        groupID = "T\(groupIDLetter1)\(groupIDLetter2)\(groupIDNumber)"
         
-        groupID_1_5.text = groupID
+        groupID_Label.text = groupID
         
         
         var handle: AuthStateDidChangeListenerHandle?
@@ -109,7 +109,9 @@ class Login_1_5_ViewController: UIViewController {
             
             
             print("ここまで３")
-            let ref2 = self.db.collection("\(self.mode)")
+            
+            
+            let ref2 = self.db.collection("Users")
             
             ref2.document(user.uid).setData([  //作成済のAdultUsersコレクションのAuthのuidに...
                 "groupUid" : "\(createduid)",  //上で作成したgroupのuidをuserのuidに保存

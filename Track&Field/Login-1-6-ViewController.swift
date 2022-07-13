@@ -16,9 +16,13 @@ class Login_1_6_ViewController: UIViewController {
     }
     
     @IBAction func viewhowuse_1_6() {
+        
     }
     
     @IBAction func usenow_1_6() {
+        
+        performSegue(withIdentifier: "toHome", sender: nil)
+        
     }
 
     /*

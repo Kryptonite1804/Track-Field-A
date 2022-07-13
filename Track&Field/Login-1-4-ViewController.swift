@@ -4,6 +4,7 @@
 //
 //  Created by 佐野生樹 on 2022/07/08.
 //
+//済・要関連付け
 
 import UIKit
 import Firebase //FB
@@ -12,7 +13,9 @@ import FirebaseFirestore
 
 class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var groupmname_TF: UITextField!
+    @IBOutlet weak var groupname_TF: UITextField!
+    
+    @IBOutlet weak var bottom_Const: NSLayoutConstraint!
     
     var groupName : String = ""
     let db = Firestore.firestore()
@@ -23,9 +26,9 @@ class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
         
         self.navigationItem.hidesBackButton = true
         
-        groupmname_TF.delegate = self
+        groupname_TF.delegate = self
         
-        groupmname_TF.addTarget(self, action: #selector(Login_1_4_ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        groupname_TF.addTarget(self, action: #selector(Login_1_4_ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         
         //key
         NotificationCenter.default.addObserver(self,
@@ -36,6 +39,8 @@ class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
                                                    selector: #selector(keyboardWillHide),
                                                    name: UIResponder.keyboardWillHideNotification,
                                                    object: nil)
+        
+        bottom_Const.constant = UIScreen.main.bounds.size.height - 333
 
         // Do any additional setup after loading the view.
     }
@@ -68,8 +73,13 @@ class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: keyboardAnimationDuration,
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
-            // アニメーションさせたい実装を行う
-//            self.groupName_TF_Const.constant = keyboardHeight + 10
+            
+            if UIScreen.main.bounds.size.height - 333 < keyboardHeight + 20 {
+            
+                self.bottom_Const.constant = keyboardHeight + 10
+                
+            }
+            
         }
     }
     
@@ -81,7 +91,10 @@ class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: keyboardAnimationDuration,
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
-//            self.groupName_TF_Const.constant = 200
+            
+            // アニメーションさせたい実装を行う
+            self.bottom_Const.constant = UIScreen.main.bounds.size.height - 333
+            
         }
     }
     
@@ -107,12 +120,11 @@ class Login_1_4_ViewController: UIViewController, UITextFieldDelegate {
             print("error: groupName not found")
             
         } else {
-            UserDefaults.standard.set(self.groupName, forKey: "groupname")
+            UserDefaults.standard.set(self.groupName, forKey: "Setup_groupname")
             //MARK: ★navigation遷移
-            self.performSegue(withIdentifier: "go-L-1-6", sender: nil)
+            self.performSegue(withIdentifier: "go-1-5", sender: self)
             
         }
-        self.performSegue(withIdentifier: "go-1-5", sender: self)
     }
 
     /*
