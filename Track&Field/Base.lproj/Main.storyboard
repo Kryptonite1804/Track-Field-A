@@ -2996,6 +2996,8 @@
                     <navigationItem key="navigationItem" title="新規登録" id="1GM-yc-o3v"/>
                     <connections>
                         <outlet property="bottom_Const" destination="z5J-Fz-HcV" id="8Wn-Ic-jaK"/>
+                        <outlet property="checkemail_TF" destination="DUW-P7-b1V" id="wcJ-x2-GGn"/>
+                        <outlet property="checkpassword_TF" destination="FPF-5z-C5u" id="aPD-qg-9nS"/>
                         <segue destination="6d7-5R-nfb" kind="show" identifier="go-2-2" id="XT7-u0-w79"/>
                     </connections>
                 </viewController>
@@ -3377,6 +3379,7 @@
                     <navigationItem key="navigationItem" title="新規登録" id="z8d-1V-s29"/>
                     <connections>
                         <outlet property="bottom_Const" destination="X1o-iJ-Bal" id="IJx-F6-LLl"/>
+                        <outlet property="groupname_TF" destination="Al4-hb-pQA" id="C11-rD-YoJ"/>
                         <segue destination="OY9-MG-upx" kind="show" identifier="go-1-5" id="H6i-SE-S3u"/>
                     </connections>
                 </viewController>
@@ -3674,6 +3677,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="mUG-xS-nPG"/>
                     <connections>
+                        <outlet property="groupID_Label" destination="49N-Zc-Eg4" id="fPq-Af-Kd4"/>
                         <segue destination="58s-42-0Qs" kind="show" identifier="go-1-6" id="wzp-HE-dNl"/>
                     </connections>
                 </viewController>
@@ -3828,6 +3832,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="QvP-HV-UZ7"/>
                     <connections>
+                        <outlet property="bottom_Const" destination="Jsg-pC-cDq" id="T5a-u8-6ET"/>
                         <outlet property="groupID_TF" destination="Jsg-pC-cDq" id="hB9-vy-QIS"/>
                         <segue destination="IoV-AE-SSL" kind="show" identifier="go-1-8" id="gko-1r-x0O"/>
                     </connections>
@@ -5968,7 +5973,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bEs-87-sSK"/>
+        <segue reference="xxO-Ku-SJd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Rectangle 139" width="25" height="25"/>
