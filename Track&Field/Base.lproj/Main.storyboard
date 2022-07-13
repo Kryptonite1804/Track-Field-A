@@ -2663,7 +2663,6 @@
                             <constraint firstItem="RMY-5s-bYL" firstAttribute="leading" secondItem="aRa-bU-t3j" secondAttribute="leading" constant="6" id="Rfq-Lx-apd"/>
                             <constraint firstItem="Kle-CT-Yq7" firstAttribute="height" secondItem="cFy-j8-ycu" secondAttribute="height" id="SO9-VA-OeD"/>
                             <constraint firstItem="Dff-7e-iY3" firstAttribute="centerX" secondItem="sZj-c2-AwG" secondAttribute="centerX" id="ST6-Ly-sXo"/>
-                            <constraint firstItem="Dff-7e-iY3" firstAttribute="top" secondItem="lmP-5K-dOk" secondAttribute="bottom" constant="30" id="Sch-oe-yLW"/>
                             <constraint firstItem="6Da-sd-dGy" firstAttribute="centerX" secondItem="sZj-c2-AwG" secondAttribute="centerX" id="TVf-Kh-Ta4"/>
                             <constraint firstItem="7m9-i9-qG0" firstAttribute="centerX" secondItem="sZj-c2-AwG" secondAttribute="centerX" id="UBi-wO-kcI"/>
                             <constraint firstItem="KBm-Fh-paF" firstAttribute="trailing" secondItem="Lhw-z0-RpE" secondAttribute="trailing" constant="27" id="Uej-0e-Mbm"/>
@@ -2684,6 +2683,7 @@
                             <constraint firstItem="cFy-j8-ycu" firstAttribute="leading" secondItem="KBm-Fh-paF" secondAttribute="leading" constant="27" id="dtd-Sk-IzL"/>
                             <constraint firstItem="Kle-CT-Yq7" firstAttribute="leading" secondItem="el2-Xs-VT6" secondAttribute="trailing" constant="12" id="eRf-rw-aAL"/>
                             <constraint firstItem="NvM-rO-6nf" firstAttribute="leading" secondItem="sZj-c2-AwG" secondAttribute="leading" constant="27" id="eW5-Ki-PlU"/>
+                            <constraint firstItem="6Da-sd-dGy" firstAttribute="top" secondItem="Dff-7e-iY3" secondAttribute="bottom" constant="266" id="fJr-VQ-2cF"/>
                             <constraint firstItem="Lhw-z0-RpE" firstAttribute="top" secondItem="wHG-Gm-Njp" secondAttribute="bottom" constant="30" id="g35-w5-hkS"/>
                             <constraint firstItem="RNW-Ux-yaw" firstAttribute="width" secondItem="Dff-7e-iY3" secondAttribute="width" id="gOo-Td-rNe"/>
                             <constraint firstItem="Jh3-rO-yY1" firstAttribute="width" secondItem="Jh3-rO-yY1" secondAttribute="height" multiplier="1:1" id="gk4-PX-6xX"/>
@@ -2706,6 +2706,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="ZFY-RV-RCG"/>
                     <connections>
+                        <outlet property="bottom_Const" destination="fJr-VQ-2cF" id="zXc-31-uUL"/>
                         <outlet property="email_Label" destination="aRa-bU-t3j" id="JRt-O5-AgP"/>
                         <outlet property="email_TF" destination="Xpb-qQ-aqx" id="tRs-nf-cur"/>
                         <outlet property="password_Label" destination="fkC-zd-oOJ" id="24Q-fN-LSJ"/>

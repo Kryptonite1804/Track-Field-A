@@ -22,6 +22,8 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var password_Label: UILabel!
     @IBOutlet weak var repassword_Label: UILabel!
     
+    @IBOutlet weak var bottom_Const: NSLayoutConstraint!
+    
     var activityIndicatorView = UIActivityIndicatorView()  //AIV
     
     var emailadress :String = ""
@@ -72,13 +74,8 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
         email_Label.text = ""
         email_Label.layer.cornerRadius = 30
         
-
         
-        
-        
-        
-        
-        
+        bottom_Const.constant = UIScreen.main.bounds.size.height - (460+44)
         
         
         // Do any additional setup after loading the view.
@@ -122,8 +119,13 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: keyboardAnimationDuration,
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
-            // アニメーションさせたい実装を行う
-//            self.pass_TF_Const.constant = keyboardHeight + 10
+            
+            if UIScreen.main.bounds.size.height - (460+44) < keyboardHeight + 20 {
+            
+                self.bottom_Const.constant = keyboardHeight + 10
+                
+            }
+            
         }
     }
     
@@ -135,7 +137,10 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: keyboardAnimationDuration,
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
-//            self.pass_TF_Const.constant = 205
+            
+            // アニメーションさせたい実装を行う
+            self.bottom_Const.constant = UIScreen.main.bounds.size.height - (460+44)
+            
         }
     }
     
