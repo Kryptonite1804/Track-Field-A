@@ -17,6 +17,7 @@ class Login_1_1_ViewController: UIViewController {
     }
     
     @IBAction func register_tapped_1_1(){
+        //StoryBoardで遷移設定済
     }
     
     @IBAction func afterdo_1_1(){

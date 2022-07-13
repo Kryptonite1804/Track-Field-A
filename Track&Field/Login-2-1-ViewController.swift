@@ -13,7 +13,7 @@ import FirebaseFirestore
 class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var checkemail_TF: UITextField!
-    @IBOutlet weak var checkpassord_TF: UITextField!
+    @IBOutlet weak var checkpassword_TF: UITextField!
     
     @IBOutlet weak var bottom_Const: NSLayoutConstraint!  //key
     
@@ -31,12 +31,12 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
         
         //TF
         checkemail_TF.delegate = self
-        checkpassord_TF.delegate = self
+        checkpassword_TF.delegate = self
         
         checkemail_TF.tag = 0
-        checkpassord_TF.tag = 1
+        checkpassword_TF.tag = 1
         
-        checkpassord_TF.isSecureTextEntry = true
+        checkpassword_TF.isSecureTextEntry = true
      
         //AIV
         activityIndicatorView.center = view.center
@@ -46,7 +46,7 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(activityIndicatorView)
         
         checkemail_TF.addTarget(self, action: #selector(Login_2_1_ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
-        checkpassord_TF.addTarget(self, action: #selector(Login_2_1_ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        checkpassword_TF.addTarget(self, action: #selector(Login_2_1_ViewController.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         // Do any additional setup after loading the view.
         
         //key
