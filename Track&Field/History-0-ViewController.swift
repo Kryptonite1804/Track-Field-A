@@ -12,6 +12,8 @@ class History_0_ViewController: UIViewController {
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
     
+    
+    
     @IBOutlet weak var table_view: UITableView!
     
     /*
