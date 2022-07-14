@@ -15,6 +15,9 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var checkemail_TF: UITextField!
     @IBOutlet weak var checkpassword_TF: UITextField!
     
+    @IBOutlet weak var mailadress_Label: UILabel!
+    @IBOutlet weak var password_Label: UILabel!
+    
     @IBOutlet weak var bottom_Const: NSLayoutConstraint!  //key
     
     
@@ -60,7 +63,25 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
                                                    object: nil)
         
         self.bottom_Const.constant = UIScreen.main.bounds.size.height - 311
+        
+        mailadress_Label.text = ""
+        mailadress_Label.layer.cornerRadius = 30
+        mailadress_Label.layer.borderColor = UIColor(red: 174, green: 55, blue: 247, alpha: 0.75).cgColor  // 枠線の色
+        mailadress_Label.layer.borderWidth = 1.0 // 枠線の太さ
+        mailadress_Label.layer.shadowColor = UIColor.black.cgColor //　影の色
+        mailadress_Label.layer.shadowOpacity = 0.25  //影の濃さ
+        mailadress_Label.layer.shadowRadius = 4.0 // 影のぼかし量
+        mailadress_Label.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
 
+        password_Label.text = ""
+        password_Label.layer.cornerRadius = 30
+        password_Label.layer.borderColor = UIColor(red: 174, green: 55, blue: 247, alpha: 0.75).cgColor  // 枠線の色
+        password_Label.layer.borderWidth = 1.0 // 枠線の太さ
+        password_Label.layer.shadowColor = UIColor.black.cgColor //　影の色
+        password_Label.layer.shadowOpacity = 0.25  //影の濃さ
+        password_Label.layer.shadowRadius = 4.0 // 影のぼかし量
+        password_Label.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
         // Do any additional setup after loading the view.
     }
     

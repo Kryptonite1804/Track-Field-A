@@ -14,6 +14,8 @@ class Login_1_7_ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var groupID_TF: UITextField!
     
+    @IBOutlet weak var groupid_Label: UILabel!
+    
     @IBOutlet weak var bottom_Const: NSLayoutConstraint!
     
     var groupID :String = ""
@@ -50,6 +52,15 @@ class Login_1_7_ViewController: UIViewController, UITextFieldDelegate {
                                                    object: nil)
         
         bottom_Const.constant = UIScreen.main.bounds.size.height - 351
+        
+        groupid_Label.text = ""
+        groupid_Label.layer.cornerRadius = 30
+        groupid_Label.layer.borderColor = UIColor(red: 174, green: 55, blue: 247, alpha: 0.75).cgColor  // 枠線の色
+        groupid_Label.layer.borderWidth = 1.0 // 枠線の太さ
+        groupid_Label.layer.shadowColor = UIColor.black.cgColor //　影の色
+        groupid_Label.layer.shadowOpacity = 0.25  //影の濃さ
+        groupid_Label.layer.shadowRadius = 4.0 // 影のぼかし量
+        groupid_Label.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
         
 
         // Do any additional setup after loading the view.

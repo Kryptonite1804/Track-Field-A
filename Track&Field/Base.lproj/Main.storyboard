@@ -2998,6 +2998,8 @@
                         <outlet property="bottom_Const" destination="z5J-Fz-HcV" id="8Wn-Ic-jaK"/>
                         <outlet property="checkemail_TF" destination="DUW-P7-b1V" id="wcJ-x2-GGn"/>
                         <outlet property="checkpassword_TF" destination="FPF-5z-C5u" id="aPD-qg-9nS"/>
+                        <outlet property="mailadress_Label" destination="NCB-wj-ilC" id="zsn-jc-PK2"/>
+                        <outlet property="password_Label" destination="ePA-b0-QVR" id="vvC-Xh-bpX"/>
                         <segue destination="6d7-5R-nfb" kind="show" identifier="go-2-2" id="XT7-u0-w79"/>
                     </connections>
                 </viewController>
@@ -3379,6 +3381,7 @@
                     <navigationItem key="navigationItem" title="新規登録" id="z8d-1V-s29"/>
                     <connections>
                         <outlet property="bottom_Const" destination="X1o-iJ-Bal" id="IJx-F6-LLl"/>
+                        <outlet property="groupName_Label" destination="b50-FH-EI8" id="qow-nM-EQK"/>
                         <outlet property="groupname_TF" destination="Al4-hb-pQA" id="C11-rD-YoJ"/>
                         <segue destination="OY9-MG-upx" kind="show" identifier="go-1-5" id="H6i-SE-S3u"/>
                     </connections>
@@ -3834,6 +3837,7 @@
                     <connections>
                         <outlet property="bottom_Const" destination="Jsg-pC-cDq" id="T5a-u8-6ET"/>
                         <outlet property="groupID_TF" destination="Jsg-pC-cDq" id="hB9-vy-QIS"/>
+                        <outlet property="groupid_Label" destination="sjP-kD-gkH" id="qbz-dJ-vw5"/>
                         <segue destination="IoV-AE-SSL" kind="show" identifier="go-1-8" id="gko-1r-x0O"/>
                     </connections>
                 </viewController>
@@ -5973,7 +5977,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xxO-Ku-SJd"/>
+        <segue reference="wzp-HE-dNl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Rectangle 139" width="25" height="25"/>

@@ -14,7 +14,6 @@ class Login_2_2_ViewController: UIViewController {
     
     @IBOutlet weak var accountname_2_2: UILabel!
     
-    
     var activityIndicatorView = UIActivityIndicatorView()
     let db = Firestore.firestore()
     
@@ -99,6 +98,11 @@ class Login_2_2_ViewController: UIViewController {
             }
             
         }
+        
+        accountname_2_2.layer.cornerRadius = 30
+        accountname_2_2.layer.borderColor = UIColor(red: 174, green: 55, blue: 247, alpha: 0.75).cgColor  // 枠線の色
+        accountname_2_2.layer.borderWidth = 1.0 // 枠線の太さ
+        
 
         // Do any additional setup after loading the view.
     }
