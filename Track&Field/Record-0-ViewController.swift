@@ -26,6 +26,16 @@ class Record_0_ViewController: UIViewController {
     @IBOutlet weak var tired_check: UIImageView!
     @IBOutlet weak var writinng_check: UIImageView!
     
+    @IBOutlet weak var practicemene_picture: UIImageView!
+    @IBOutlet weak var placefeild_picture: UIImageView!
+    @IBOutlet weak var point_picture: UIImageView!
+    @IBOutlet weak var pain_pisture: UIImageView!
+    @IBOutlet weak var eatTime_picture: UIImageView!
+    @IBOutlet weak var sleep_picture: UIImageView!
+    @IBOutlet weak var tired_picture: UIImageView!
+    @IBOutlet weak var writing_picture: UIImageView!
+    
+    
     @IBOutlet weak var writing: UITextView!
     
     @IBOutlet weak var placeTypeButton: UIButton!
@@ -121,7 +131,63 @@ class Record_0_ViewController: UIViewController {
         month.text = todayMonth
         day.text = todayDay
         date.text = todayYobi
-       // print("日時デフォルト値: \(createdDate)")
+
+        
+        practicemene_picture.layer.cornerRadius = 30
+        practicemene_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        practicemene_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        practicemene_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        practicemene_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        practicemene_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        placefeild_picture.layer.cornerRadius = 30
+        placefeild_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        placefeild_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        placefeild_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        placefeild_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        placefeild_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        point_picture.layer.cornerRadius = 30
+        point_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        point_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        point_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        point_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        point_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        pain_pisture.layer.cornerRadius = 30
+        pain_pisture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        pain_pisture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        pain_pisture.layer.shadowOpacity = 0.25  //影の濃さ
+        pain_pisture.layer.shadowRadius = 4.0 // 影のぼかし量
+        pain_pisture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        eatTime_picture.layer.cornerRadius = 30
+        eatTime_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        eatTime_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        eatTime_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        eatTime_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        eatTime_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        sleep_picture.layer.cornerRadius = 30
+        sleep_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        sleep_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        sleep_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        sleep_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        sleep_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        tired_picture.layer.cornerRadius = 30
+        tired_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        tired_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        tired_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        tired_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        tired_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
+        
+        writing_picture.layer.cornerRadius = 30
+        writing_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
+        writing_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
+        writing_picture.layer.shadowOpacity = 0.25  //影の濃さ
+        writing_picture.layer.shadowRadius = 4.0 // 影のぼかし量
+        writing_picture.layer.shadowOffset = CGSize(width: 3.0, height: 3.0) // 影の方向
         
         
         // Do any additional setup after loading the view.

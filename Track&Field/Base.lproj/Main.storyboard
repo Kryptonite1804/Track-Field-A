@@ -96,7 +96,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-RB-26a">
                                                     <rect key="frame" x="27" y="10" width="368" height="151"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-j1-QlF">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-j1-QlF">
                                                     <rect key="frame" x="226" y="102" width="150" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="lDU-Ax-Rrc"/>
@@ -112,14 +112,14 @@
                                                     <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-2" translatesAutoresizingMaskIntoConstraints="NO" id="OxT-fA-x6L">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="OxT-fA-x6L">
                                                     <rect key="frame" x="39" y="102" width="150" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="TVk-bU-Jnx"/>
                                                         <constraint firstAttribute="height" constant="36" id="fQ3-rB-TAo"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-1" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-Me-d5w">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-Me-d5w">
                                                     <rect key="frame" x="39" y="51" width="337" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="36" id="S1M-Ma-i13"/>
@@ -173,7 +173,7 @@
                                                     <color key="textColor" red="1" green="0.23921568627450979" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-2" translatesAutoresizingMaskIntoConstraints="NO" id="hAd-2l-syN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="hAd-2l-syN">
                                                     <rect key="frame" x="226" y="102" width="150" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="Osb-Gs-Bvi"/>
@@ -4888,7 +4888,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCr-px-Owj">
                                         <rect key="frame" x="0.0" y="0.0" width="415" height="749"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-g9-u58" userLabel="p_rectangle_detail_S_D_1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-g9-u58" userLabel="p_rectangle_detail_S_D_1">
                                                 <rect key="frame" x="27" y="102" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="c8n-cd-gxe"/>
@@ -4921,7 +4921,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-Ou-zc1" userLabel="p_rectangle_detail_S_D_2">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-Ou-zc1" userLabel="p_rectangle_detail_S_D_2">
                                                 <rect key="frame" x="27" y="222" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="jW3-6s-5hB"/>
@@ -4944,7 +4944,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-HS-4sc" userLabel="p_rectangle_detail_S_D_3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-HS-4sc" userLabel="p_rectangle_detail_S_D_3">
                                                 <rect key="frame" x="27" y="282" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="k9z-tW-JsE"/>
@@ -4986,7 +4986,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="i2O-kD-f5Z" userLabel="p_rectangle_detail_S_D_4">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="i2O-kD-f5Z" userLabel="p_rectangle_detail_S_D_4">
                                                 <rect key="frame" x="27" y="342" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="hxl-vj-el7"/>
@@ -5009,7 +5009,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="qDR-iO-1hb" userLabel="p_rectangle_detail_S_D_5">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="qDR-iO-1hb" userLabel="p_rectangle_detail_S_D_5">
                                                 <rect key="frame" x="27" y="402" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="CeV-op-etv"/>
@@ -5032,7 +5032,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="ZIc-7m-yxU" userLabel="p_rectangle_detail_S_D_6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="ZIc-7m-yxU" userLabel="p_rectangle_detail_S_D_6">
                                                 <rect key="frame" x="27" y="462" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="KIo-bM-vW4"/>
@@ -5055,7 +5055,7 @@
                                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle-curbed_NoLine" translatesAutoresizingMaskIntoConstraints="NO" id="IXW-uq-Np0" userLabel="p_rectangle_detail_L_D_7">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="IXW-uq-Np0" userLabel="p_rectangle_detail_L_D_7">
                                                 <rect key="frame" x="27" y="522" width="364" height="150"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_M" translatesAutoresizingMaskIntoConstraints="NO" id="5U3-o4-E96">
@@ -5192,7 +5192,7 @@
                                                     <constraint firstAttribute="height" constant="3" id="N9E-Le-3o2"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-Qn-wr1" userLabel="p_rectangle_detail_S_D_6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-Qn-wr1" userLabel="p_rectangle_detail_S_D_6">
                                                 <rect key="frame" x="27" y="162" width="364" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Ysx-10-okn"/>
@@ -5482,25 +5482,33 @@
                     <connections>
                         <outlet property="date" destination="Zps-Rw-lZV" id="JWG-47-3o8"/>
                         <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
+                        <outlet property="eatTime_picture" destination="i2O-kD-f5Z" id="jlL-kP-0b4"/>
                         <outlet property="eat_time_check" destination="Osb-cA-2Um" id="OjA-5c-1kK"/>
                         <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
                         <outlet property="mealTimeButton" destination="o1m-Eq-8oa" id="Vlz-JT-qyL"/>
                         <outlet property="mintemper" destination="hha-PB-J5E" id="NkZ-Bx-Wwo"/>
                         <outlet property="month" destination="vy2-uT-hKc" id="lIy-vL-nhv"/>
                         <outlet property="pain_check" destination="Cqv-bJ-tif" id="bZE-MX-2sl"/>
+                        <outlet property="pain_pisture" destination="gRw-HS-4sc" id="ys8-GN-CXR"/>
                         <outlet property="placeTypeButton" destination="sNn-nG-CIA" id="KXU-Zx-sFF"/>
                         <outlet property="place_feild_check" destination="eNO-0N-rRq" id="zUg-aG-0E0"/>
+                        <outlet property="placefeild_picture" destination="kW1-Qn-wr1" id="DqY-lv-2ao"/>
                         <outlet property="point_check" destination="Yqx-2d-l2l" id="HPF-3J-UQ6"/>
+                        <outlet property="point_picture" destination="JaZ-Ou-zc1" id="OAV-1c-uep"/>
                         <outlet property="practicePonitButton" destination="6r8-qs-2iX" id="RMr-dy-DEQ"/>
                         <outlet property="practice_mene_check" destination="0b6-Jo-6U9" id="mfk-v6-67G"/>
+                        <outlet property="practicemene_picture" destination="bCz-g9-u58" id="zZl-Mq-DeF"/>
                         <outlet property="sleepEndButton" destination="wE8-Dc-D4G" id="BjX-Zj-sVX"/>
                         <outlet property="sleepStartButton" destination="oef-Yc-dlf" id="jQo-Uy-1hx"/>
                         <outlet property="sleep_check" destination="mZ9-Fg-gkj" id="HFt-Z4-OVd"/>
+                        <outlet property="sleep_picture" destination="qDR-iO-1hb" id="GB1-kh-S8k"/>
                         <outlet property="tiredRevelButton" destination="z0D-bB-hS7" id="p5h-js-9Uj"/>
                         <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
+                        <outlet property="tired_picture" destination="ZIc-7m-yxU" id="gKm-cX-iBE"/>
                         <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
                         <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
                         <outlet property="writing" destination="xJJ-D4-8qU" id="TAk-WE-8Gl"/>
+                        <outlet property="writing_picture" destination="IXW-uq-Np0" id="M8T-r7-1GE"/>
                         <outlet property="writinng_check" destination="ksy-6W-5K4" id="oaD-2l-AbS"/>
                         <segue destination="tWq-zj-VSR" kind="show" identifier="go-record-1" id="iMY-6F-Hy4"/>
                         <segue destination="DHw-op-Z6D" kind="show" identifier="go-record-2" id="yH8-UZ-YIh"/>
@@ -5524,7 +5532,7 @@
                                     <constraint firstAttribute="height" constant="3" id="SZq-oT-RXO"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="pA2-yk-vdt" userLabel="p_rectangle_detail_S_D_5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="pA2-yk-vdt" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="264" width="363" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="363" id="cx0-Y0-SHH"/>
@@ -5575,7 +5583,7 @@
                                     <action selector="startay" destination="Ps6-u7-VXm" eventType="valueChanged" id="5Tz-9n-28C"/>
                                 </connections>
                             </datePicker>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-oQ-SH6" userLabel="p_rectangle_detail_S_D_5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="SeI-oQ-SH6" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="339" width="363" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="qv5-yX-0Xe"/>
@@ -5609,7 +5617,7 @@
                                     <action selector="endday" destination="Ps6-u7-VXm" eventType="valueChanged" id="j3H-ZK-bHY"/>
                                 </connections>
                             </datePicker>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="0bv-Kt-4TD" userLabel="p_rectangle_detail_S_D_5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="0bv-Kt-4TD" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="452" width="363" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="UNv-a2-Wox"/>
@@ -5643,7 +5651,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbshadow" translatesAutoresizingMaskIntoConstraints="NO" id="tIS-3H-Ho6" userLabel="p_rectangle_detail_S_D_5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="tIS-3H-Ho6" userLabel="p_rectangle_detail_S_D_5">
                                 <rect key="frame" x="27" y="527" width="363" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="1UG-3r-HyJ"/>
@@ -5849,9 +5857,13 @@
                     <navigationItem key="navigationItem" title="分析" id="xVx-I0-RzQ"/>
                     <connections>
                         <outlet property="endday_check" destination="FZs-TB-W4j" id="X97-XI-S4k"/>
+                        <outlet property="endday_picture" destination="SeI-oQ-SH6" id="Z6H-vc-2sh"/>
+                        <outlet property="graphKey1_picture" destination="0bv-Kt-4TD" id="83o-v2-oAb"/>
+                        <outlet property="graphKey2_picture" destination="tIS-3H-Ho6" id="vIK-Ht-qM1"/>
                         <outlet property="graph_key1_check" destination="hSL-vy-dH2" id="e9L-dK-WwO"/>
                         <outlet property="graph_key2_check" destination="YhG-6r-Ved" id="I5V-c8-iGY"/>
                         <outlet property="startday_check" destination="w48-1m-uJd" id="xkb-MC-2LF"/>
+                        <outlet property="startday_picture" destination="pA2-yk-vdt" id="rDa-Q6-sBX"/>
                         <segue destination="Veh-G8-xpT" kind="show" identifier="go-ana-1" id="7WY-Mb-1fv"/>
                     </connections>
                 </viewController>
@@ -5867,6 +5879,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
+                                <rect key="frame" x="27" y="121" width="360" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="XRr-Cn-bvx"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="棒グラフ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDm-Pw-1As">
                                 <rect key="frame" x="156" y="130.5" width="99" height="20"/>
                                 <constraints>
@@ -5877,19 +5895,13 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_nosha-1" translatesAutoresizingMaskIntoConstraints="NO" id="0mb-Ng-Ule">
-                                <rect key="frame" x="27" y="121" width="360" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="XRr-Cn-bvx"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="dMw-w5-DOt">
                                 <rect key="frame" x="0.0" y="88" width="414" height="3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="mlf-ER-lQf"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w_rectangle_curbed_Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-4M-msB">
                                 <rect key="frame" x="27" y="173" width="360" height="80"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2A-60-kXW">
@@ -5914,7 +5926,7 @@
                                     <constraint firstAttribute="width" constant="111" id="c0D-PD-RjV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="戻る" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-8S-5Za">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登録！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9j-8S-5Za">
                                 <rect key="frame" x="174" y="750.5" width="66" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="Hdg-UJ-G9Q"/>
@@ -5968,6 +5980,8 @@
                     <navigationItem key="navigationItem" title="分析" id="Kfu-DB-YJG"/>
                     <connections>
                         <outlet property="grapf_kind" destination="KDm-Pw-1As" id="gj0-aJ-Y0M"/>
+                        <outlet property="graphKind_picture" destination="0mb-Ng-Ule" id="r9x-aF-e3T"/>
+                        <outlet property="graphTitle_picture" destination="0dU-4M-msB" id="xkV-sz-Syk"/>
                         <outlet property="graph_titile" destination="N2A-60-kXW" id="62k-ZQ-Urp"/>
                     </connections>
                 </viewController>
@@ -5999,18 +6013,13 @@
         <image name="p_rectangle_detail_L_D" width="330" height="152"/>
         <image name="p_rectangle_detail_M_D" width="330" height="64"/>
         <image name="p_rectangle_detail_S_D" width="330" height="46"/>
-        <image name="p_rectangle_nosha-1" width="333" height="38"/>
-        <image name="p_rectangle_nosha-2" width="152" height="36"/>
         <image name="p_~" width="8" height="22"/>
         <image name="p_×" width="12" height="12"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="r_line_light" width="320" height="1"/>
         <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
-        <image name="w_rectangle" width="135" height="36"/>
-        <image name="w_rectangle-curbed_NoLine" width="328" height="150"/>
-        <image name="w_rectangle_curbed_Shadow" width="309" height="83"/>
-        <image name="w_rectangle_curbshadow" width="328" height="44"/>
+        <image name="white_prefect_rectangle" width="282" height="36"/>
         <image name="👑" width="18" height="19"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
