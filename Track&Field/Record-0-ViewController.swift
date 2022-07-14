@@ -132,7 +132,7 @@ class Record_0_ViewController: UIViewController {
         day.text = todayDay
         date.text = todayYobi
 
-        
+        //design
         practicemene_picture.layer.cornerRadius = 30
         practicemene_picture.backgroundColor = UIColor(red: 250, green: 250, blue: 250, alpha: 1.0)//塗り潰し
         practicemene_picture.layer.shadowColor = UIColor.black.cgColor //　影の色
