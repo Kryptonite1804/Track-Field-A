@@ -18,7 +18,7 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mailadress_Label: UILabel!
     @IBOutlet weak var password_Label: UILabel!
     
-    @IBOutlet weak var bottom_Const: NSLayoutConstraint!  //key
+    @IBOutlet weak var bottom_Const1: NSLayoutConstraint!  //key
     
     
     var activityIndicatorView = UIActivityIndicatorView()  //AIV
@@ -62,7 +62,7 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
                                                    name: UIResponder.keyboardWillHideNotification,
                                                    object: nil)
         
-        self.bottom_Const.constant = UIScreen.main.bounds.size.height - 311
+        self.bottom_Const1.constant = UIScreen.main.bounds.size.height - 311
         
         mailadress_Label.text = ""
         mailadress_Label.layer.cornerRadius = 30
@@ -121,7 +121,7 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
             // アニメーションさせたい実装を行う
             if UIScreen.main.bounds.size.height - 311 < keyboardHeight + 10 {
             
-                self.bottom_Const.constant = keyboardHeight + 10
+                self.bottom_Const1.constant = keyboardHeight + 10
                 
             }
         }
@@ -135,7 +135,7 @@ class Login_2_1_ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: keyboardAnimationDuration,
                        delay: 0,
                        options: UIView.AnimationOptions(rawValue: KeyboardAnimationCurve)) {
-            self.bottom_Const.constant = UIScreen.main.bounds.size.height - 311
+            self.bottom_Const1.constant = UIScreen.main.bounds.size.height - 311
         }
     }
     

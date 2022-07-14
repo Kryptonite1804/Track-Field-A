@@ -231,7 +231,7 @@ class Login_1_2_ViewController: UIViewController, UITextFieldDelegate {
                     self.activityIndicatorView.stopAnimating()  //AIV
                     
                     //MARK: ★navigation遷移
-                    self.performSegue(withIdentifier: "go-1-3", sender: self)
+                    self.performSegue(withIdentifier: "go-1-2-1", sender: self)
 
                     
                 }

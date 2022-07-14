@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="vH8-2O-220">
             <objects>
-                <tabBarController id="4Ro-WB-qmh" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Home" id="4Ro-WB-qmh" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zy0-GT-unu"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LzG-0d-0sT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -2728,7 +2728,7 @@
                         <outlet property="repassword_TF" destination="lmP-5K-dOk" id="vWK-aY-TUi"/>
                         <outlet property="username_Label" destination="cFy-j8-ycu" id="n6b-qf-OPk"/>
                         <outlet property="username_TF" destination="Kle-CT-Yq7" id="eEF-M5-ARj"/>
-                        <segue destination="PR0-mI-rE2" kind="show" identifier="go-1-3" id="HPb-lg-gpn"/>
+                        <segue destination="cGc-eu-8tq" kind="show" identifier="go-1-2-1" id="B1t-L2-l4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-qy-N2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3007,7 +3007,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="1GM-yc-o3v"/>
                     <connections>
-                        <outlet property="bottom_Const" destination="z5J-Fz-HcV" id="8Wn-Ic-jaK"/>
+                        <outlet property="bottom_Const1" destination="z5J-Fz-HcV" id="XRw-rK-XuO"/>
                         <outlet property="checkemail_TF" destination="DUW-P7-b1V" id="wcJ-x2-GGn"/>
                         <outlet property="checkpassword_TF" destination="FPF-5z-C5u" id="aPD-qg-9nS"/>
                         <outlet property="mailadress_Label" destination="NCB-wj-ilC" id="zsn-jc-PK2"/>
@@ -3245,7 +3245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bp-ns-60X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3171" y="-2091"/>
+            <point key="canvasLocation" x="3954" y="-2091"/>
         </scene>
         <!--新規登録-->
         <scene sceneID="xd7-z8-C9o">
@@ -3400,7 +3400,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REb-IN-ryU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3955" y="-2091"/>
+            <point key="canvasLocation" x="4738" y="-2091"/>
         </scene>
         <!--新規登録-->
         <scene sceneID="RSO-Ca-Zbx">
@@ -3698,7 +3698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1c-c6-NIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4729" y="-2091"/>
+            <point key="canvasLocation" x="5513" y="-2091"/>
         </scene>
         <!--新規登録-->
         <scene sceneID="427-BJ-9Vj">
@@ -3847,7 +3847,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="新規登録" id="QvP-HV-UZ7"/>
                     <connections>
-                        <outlet property="bottom_Const" destination="Jsg-pC-cDq" id="T5a-u8-6ET"/>
                         <outlet property="groupID_TF" destination="Jsg-pC-cDq" id="hB9-vy-QIS"/>
                         <outlet property="groupid_Label" destination="sjP-kD-gkH" id="qbz-dJ-vw5"/>
                         <segue destination="IoV-AE-SSL" kind="show" identifier="go-1-8" id="gko-1r-x0O"/>
@@ -4160,7 +4159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8x-YK-qQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5558" y="-2091"/>
+            <point key="canvasLocation" x="6342" y="-2091"/>
         </scene>
         <!--メニューを記録-->
         <scene sceneID="Fq5-dt-i5S">
@@ -4669,7 +4668,6 @@
                         <outlet property="downTimeButton" destination="FHE-Vi-QAr" id="Z0C-Kv-45l"/>
                         <outlet property="down_distance_record" destination="hVn-S9-JAo" id="SAQ-MX-w4a"/>
                         <outlet property="down_picture" destination="3of-0f-XMS" id="uWF-BS-yiv"/>
-                        <outlet property="mainPractice_picture" destination="Pwx-Zy-8Lc" id="15z-hX-Gqy"/>
                         <outlet property="main_mene_record" destination="y4c-SN-GmE" id="0tJ-VV-NQK"/>
                         <outlet property="practiceTypeButton" destination="86n-Z0-FZZ" id="mfM-m8-XFh"/>
                         <outlet property="practiceType_picture" destination="J4c-rc-YAm" id="WXP-S1-D7X"/>
@@ -6007,6 +6005,233 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5s-AL-eMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2386.9565217391305" y="1589.7321428571429"/>
+        </scene>
+        <!--新規登録-->
+        <scene sceneID="Iv9-HI-91h">
+            <objects>
+                <viewController id="cGc-eu-8tq" customClass="Login_1_2_1_ViewController" customModule="Track_Field" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aKu-aq-fCS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_bold" translatesAutoresizingMaskIntoConstraints="NO" id="we7-lV-w1J">
+                                <rect key="frame" x="0.0" y="88" width="414" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="dc4-EW-W6F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モードを選択" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-30-K6q">
+                                <rect key="frame" x="27" y="188" width="122.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="59J-Eq-Dtx"/>
+                                    <constraint firstAttribute="width" constant="122.5" id="m8v-1i-8dN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-Fb-IdC">
+                                <rect key="frame" x="27" y="212" width="360" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ZoI-LY-5Gl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ5-Yc-tQk">
+                                <rect key="frame" x="27" y="232" width="360" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tdk-Ci-kGQ"/>
+                                </constraints>
+                                <string key="text">指導者か選手かにより、
+使用できる機能が異なります。</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="RWs-hd-Qp4">
+                                <rect key="frame" x="27" y="333" width="360" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.75" id="IkQ-wu-eh6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKQ-P7-peT">
+                                <rect key="frame" x="27" y="353" width="360" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="CJy-bA-84L"/>
+                                </constraints>
+                                <string key="text">自分の練習の記録・履歴確認のほか、
+他の選手の記録を当日限り確認できます。</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_S" translatesAutoresizingMaskIntoConstraints="NO" id="VE2-Ht-g2i">
+                                <rect key="frame" x="282" y="402" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="6Tl-wK-AtZ"/>
+                                    <constraint firstAttribute="width" constant="105" id="t3E-Pk-Qu8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選手モード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0E-xg-QbI">
+                                <rect key="frame" x="283.5" y="408" width="99" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="GcR-ir-i9O"/>
+                                    <constraint firstAttribute="height" constant="20" id="goh-Ny-Lf3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myq-cC-us5">
+                                <rect key="frame" x="282" y="402" width="105" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="tap_player" destination="cGc-eu-8tq" eventType="touchUpInside" id="U1A-zM-TiJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="絶対に終了しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plF-Iq-Wg3">
+                                <rect key="frame" x="72" y="121" width="270" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="DFo-qV-HY6"/>
+                                    <constraint firstAttribute="width" constant="270" id="fIz-Sy-1i5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.98519796130000004" green="0.23759797220000001" blue="0.58632409569999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選手モード・一人で使う" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK6-kF-aQD">
+                                <rect key="frame" x="27" y="313" width="168.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168.5" id="Mh7-Nq-hjP"/>
+                                    <constraint firstAttribute="height" constant="20" id="jSs-vr-dcb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_line_light" translatesAutoresizingMaskIntoConstraints="NO" id="kXb-L7-grH">
+                                <rect key="frame" x="27" y="478" width="360" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.75" id="TmI-Uj-f8m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-Ir-Duh">
+                                <rect key="frame" x="27" y="498" width="360" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="nZm-Cn-dwI"/>
+                                </constraints>
+                                <string key="text">指導に特化したモード。練習記録機能はありません。
+全選手・全日の練習履歴を確認できます。</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_curbed_S" translatesAutoresizingMaskIntoConstraints="NO" id="dQi-pG-9ak">
+                                <rect key="frame" x="282" y="547" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="AMb-5q-vpv"/>
+                                    <constraint firstAttribute="width" constant="105" id="KRJ-ty-CG2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指導者モード" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-SN-F9d">
+                                <rect key="frame" x="283.5" y="553" width="99" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="a5V-CU-CWc"/>
+                                    <constraint firstAttribute="height" constant="20" id="bND-CL-yat"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a5-u2-48i">
+                                <rect key="frame" x="282" y="547" width="105" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="tap_coach" destination="cGc-eu-8tq" eventType="touchUpInside" id="420-Co-v5y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指導者モード" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k95-3i-fdR">
+                                <rect key="frame" x="27" y="458" width="92" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="d31-Z5-kfc"/>
+                                    <constraint firstAttribute="height" constant="20" id="yNv-qG-iTI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 / 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Or-VC-1gY">
+                                <rect key="frame" x="191.5" y="814" width="31" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="Xtl-YX-CXV"/>
+                                    <constraint firstAttribute="height" constant="18" id="byh-zk-pVv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MYA-Na-mrq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RWs-hd-Qp4" firstAttribute="leading" secondItem="aKu-aq-fCS" secondAttribute="leading" constant="27" id="0Zf-4B-jyT"/>
+                            <constraint firstItem="dQi-pG-9ak" firstAttribute="centerX" secondItem="qfM-SN-F9d" secondAttribute="centerX" constant="1.5" id="4oZ-Oy-yNQ"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="QKQ-P7-peT" secondAttribute="trailing" constant="27" id="7Dt-s3-Zi4"/>
+                            <constraint firstItem="FK6-kF-aQD" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="AVo-1H-tL6"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="bottom" secondItem="4Or-VC-1gY" secondAttribute="bottom" constant="30" id="B5e-w3-FJo"/>
+                            <constraint firstItem="XZ5-Yc-tQk" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="ChX-f7-7p0"/>
+                            <constraint firstItem="FK6-kF-aQD" firstAttribute="top" secondItem="XZ5-Yc-tQk" secondAttribute="bottom" constant="45" id="Cjb-su-LN0"/>
+                            <constraint firstItem="ibo-Fb-IdC" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="D5a-0u-lD6"/>
+                            <constraint firstItem="L3d-Ir-Duh" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="DOG-DG-GDL"/>
+                            <constraint firstItem="L3d-Ir-Duh" firstAttribute="top" secondItem="k95-3i-fdR" secondAttribute="bottom" constant="20" id="Dmb-Hf-hO4"/>
+                            <constraint firstItem="0a5-u2-48i" firstAttribute="height" secondItem="dQi-pG-9ak" secondAttribute="height" id="GgN-zv-pLs"/>
+                            <constraint firstItem="k95-3i-fdR" firstAttribute="top" secondItem="b0E-xg-QbI" secondAttribute="bottom" constant="30" id="GjL-7N-ht9"/>
+                            <constraint firstItem="VE2-Ht-g2i" firstAttribute="centerX" secondItem="b0E-xg-QbI" secondAttribute="centerX" constant="1.5" id="IWC-Xu-VXp"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="dQi-pG-9ak" secondAttribute="trailing" constant="27" id="Igv-k0-sh7"/>
+                            <constraint firstItem="Myq-cC-us5" firstAttribute="height" secondItem="VE2-Ht-g2i" secondAttribute="height" id="LqM-JW-M31"/>
+                            <constraint firstItem="0a5-u2-48i" firstAttribute="centerY" secondItem="dQi-pG-9ak" secondAttribute="centerY" id="P01-8Z-Xmk"/>
+                            <constraint firstItem="plF-Iq-Wg3" firstAttribute="centerX" secondItem="aKu-aq-fCS" secondAttribute="centerX" id="QVt-Ox-UxN"/>
+                            <constraint firstItem="QKQ-P7-peT" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="ROb-dh-sxD"/>
+                            <constraint firstItem="dQi-pG-9ak" firstAttribute="top" secondItem="L3d-Ir-Duh" secondAttribute="bottom" constant="20" id="SXx-N2-unv"/>
+                            <constraint firstItem="VE2-Ht-g2i" firstAttribute="top" secondItem="QKQ-P7-peT" secondAttribute="bottom" constant="20" id="Tqs-73-yWd"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="VE2-Ht-g2i" secondAttribute="trailing" constant="27" id="U10-Ff-m3V"/>
+                            <constraint firstItem="k95-3i-fdR" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="VNo-Xd-jiV"/>
+                            <constraint firstItem="0a5-u2-48i" firstAttribute="centerX" secondItem="dQi-pG-9ak" secondAttribute="centerX" id="WI4-7a-AOx"/>
+                            <constraint firstItem="RWs-hd-Qp4" firstAttribute="top" secondItem="FK6-kF-aQD" secondAttribute="bottom" id="Xp3-Rf-p6P"/>
+                            <constraint firstItem="we7-lV-w1J" firstAttribute="top" secondItem="MYA-Na-mrq" secondAttribute="top" id="aBo-SD-vLl"/>
+                            <constraint firstItem="ibo-Fb-IdC" firstAttribute="top" secondItem="A1h-30-K6q" secondAttribute="bottom" id="avn-Sh-MtB"/>
+                            <constraint firstItem="kXb-L7-grH" firstAttribute="top" secondItem="k95-3i-fdR" secondAttribute="bottom" id="b40-N2-T6F"/>
+                            <constraint firstItem="0a5-u2-48i" firstAttribute="width" secondItem="dQi-pG-9ak" secondAttribute="width" id="cmK-ej-Jq1"/>
+                            <constraint firstItem="A1h-30-K6q" firstAttribute="leading" secondItem="MYA-Na-mrq" secondAttribute="leading" constant="27" id="ct2-Z2-kK4"/>
+                            <constraint firstItem="A1h-30-K6q" firstAttribute="top" secondItem="MYA-Na-mrq" secondAttribute="top" constant="100" id="d8b-Y5-Awb"/>
+                            <constraint firstItem="Myq-cC-us5" firstAttribute="width" secondItem="VE2-Ht-g2i" secondAttribute="width" id="f8Q-5t-GEF"/>
+                            <constraint firstItem="dQi-pG-9ak" firstAttribute="centerY" secondItem="qfM-SN-F9d" secondAttribute="centerY" constant="1.5" id="gwl-jX-kXN"/>
+                            <constraint firstItem="QKQ-P7-peT" firstAttribute="top" secondItem="FK6-kF-aQD" secondAttribute="bottom" constant="20" id="how-xS-gPj"/>
+                            <constraint firstItem="Myq-cC-us5" firstAttribute="centerY" secondItem="VE2-Ht-g2i" secondAttribute="centerY" id="llH-Ma-Kg4"/>
+                            <constraint firstAttribute="trailing" secondItem="RWs-hd-Qp4" secondAttribute="trailing" constant="27" id="nM6-rK-Wzw"/>
+                            <constraint firstItem="plF-Iq-Wg3" firstAttribute="top" secondItem="we7-lV-w1J" secondAttribute="bottom" constant="30" id="nOk-yb-D3D"/>
+                            <constraint firstItem="we7-lV-w1J" firstAttribute="leading" secondItem="aKu-aq-fCS" secondAttribute="leading" id="nXf-Fp-nn1"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="L3d-Ir-Duh" secondAttribute="trailing" constant="27" id="ql9-I0-qt5"/>
+                            <constraint firstAttribute="trailing" secondItem="kXb-L7-grH" secondAttribute="trailing" constant="27" id="rfO-hK-UQd"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="XZ5-Yc-tQk" secondAttribute="trailing" constant="27" id="rwg-Fw-U4I"/>
+                            <constraint firstItem="VE2-Ht-g2i" firstAttribute="centerY" secondItem="b0E-xg-QbI" secondAttribute="centerY" constant="1.5" id="sXu-CH-IG2"/>
+                            <constraint firstAttribute="trailing" secondItem="we7-lV-w1J" secondAttribute="trailing" id="uRI-97-nO3"/>
+                            <constraint firstItem="XZ5-Yc-tQk" firstAttribute="top" secondItem="A1h-30-K6q" secondAttribute="bottom" constant="20" id="uXS-20-FG4"/>
+                            <constraint firstItem="MYA-Na-mrq" firstAttribute="trailing" secondItem="ibo-Fb-IdC" secondAttribute="trailing" constant="27" id="ucY-Or-bJO"/>
+                            <constraint firstItem="Myq-cC-us5" firstAttribute="centerX" secondItem="VE2-Ht-g2i" secondAttribute="centerX" id="uk6-ZU-TzB"/>
+                            <constraint firstItem="kXb-L7-grH" firstAttribute="leading" secondItem="aKu-aq-fCS" secondAttribute="leading" constant="27" id="v6q-eu-HOd"/>
+                            <constraint firstItem="4Or-VC-1gY" firstAttribute="centerX" secondItem="aKu-aq-fCS" secondAttribute="centerX" id="zfZ-YO-Ii3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新規登録" id="6Xo-cK-5PA"/>
+                    <connections>
+                        <segue destination="PR0-mI-rE2" kind="show" identifier="go-1-3" id="PYc-nA-zzh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ar6-9Y-qYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3170" y="-2091"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
