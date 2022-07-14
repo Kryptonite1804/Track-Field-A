@@ -46,7 +46,7 @@ class Login_2_2_ViewController: UIViewController {
             self.userUid = user.uid
             
             /*
-            self.db.collection("AdultUsers").document(self.userUid).getDocument { (document, error) in
+            self.db.collection("Users").document(self.userUid).getDocument { (document, error) in
                 
                 if let document = document, document.exists {
                     let dataDescription = document.data().map(String.init(describing: ))
@@ -60,8 +60,8 @@ class Login_2_2_ViewController: UIViewController {
             print(self.userUid)
             
             
-            //Adultusersコレクション内の情報を取得
-            let docRef1 = self.db.collection("AdultUsers").document("\(self.userUid)")
+            //Usersコレクション内の情報を取得
+            let docRef1 = self.db.collection("Users").document("\(self.userUid)")
             
             docRef1.getDocument { (document, error) in
                 if let document = document, document.exists {
@@ -104,7 +104,37 @@ class Login_2_2_ViewController: UIViewController {
     }
     
     @IBAction func cancel_2_2() {
-        self.navigationController?.popToRootViewController(animated: true)
+        
+        
+            activityIndicatorView.startAnimating()
+            
+            let firebaseAuth = Auth.auth()
+           do {
+             try firebaseAuth.signOut()
+               
+               print("強制ログアウト完了")
+               
+               //MyAlert
+               //トップへ
+               
+               self.navigationController?.popToRootViewController(animated: true)
+                   
+               activityIndicatorView.stopAnimating()
+               
+               
+           } catch let signOutError as NSError {
+             print("Error signing out: %@", signOutError)
+               activityIndicatorView.stopAnimating()
+               print("強制ログアウト失敗")
+               
+               self.navigationController?.popToRootViewController(animated: true)
+           }
+        
+        
+        
+        
+        
+        
     }
     
     @IBAction func login_2_2() {

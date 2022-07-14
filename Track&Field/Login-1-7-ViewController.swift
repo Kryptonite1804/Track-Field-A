@@ -163,8 +163,8 @@ class Login_1_7_ViewController: UIViewController, UITextFieldDelegate {
                         
                         self.groupUid = document.documentID
                         
-                        UserDefaults.standard.set(groupName, forKey: "groupName1")
-                        UserDefaults.standard.set(self.groupUid, forKey: "groupUid1")
+                        UserDefaults.standard.set(groupName, forKey: "Enter_groupName")
+                        UserDefaults.standard.set(self.groupUid, forKey: "Enter_groupUid")
                         
                         
                         print("これがデータ:\(data)")

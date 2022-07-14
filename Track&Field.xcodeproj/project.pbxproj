@@ -16,6 +16,7 @@
 		E1E70C10287BD58D00C80DCA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E1E70C0F287BD58D00C80DCA /* FirebaseFirestoreSwift */; };
 		E1E70C12287BD58D00C80DCA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E1E70C11287BD58D00C80DCA /* FirebaseStorage */; };
 		E1E70C14287BD58D00C80DCA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E1E70C13287BD58D00C80DCA /* FirebaseStorageCombine-Community */; };
+		E1F47C30287F9A76000B3407 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1F47C2F287F9A76000B3407 /* GoogleService-Info.plist */; };
 		E66B38F3285F2F510013338B /* Login-0-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B38F2285F2F510013338B /* Login-0-ViewController.swift */; };
 		E66B38F5285F2F920013338B /* History-0-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B38F4285F2F920013338B /* History-0-ViewController.swift */; };
 		E66B38F7285F2FD40013338B /* Record-0-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B38F6285F2FD40013338B /* Record-0-ViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1F47C2F287F9A76000B3407 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E66B38F2285F2F510013338B /* Login-0-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-0-ViewController.swift"; sourceTree = "<group>"; };
 		E66B38F4285F2F920013338B /* History-0-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History-0-ViewController.swift"; sourceTree = "<group>"; };
 		E66B38F6285F2FD40013338B /* Record-0-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Record-0-ViewController.swift"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				E66B3921287855F60013338B /* Analize-1-ViewController.swift */,
 				E66B38FA285F303B0013338B /* Ranking-0-ViewController.swift */,
 				E66B391F287855D90013338B /* Ranking-1-ViewController.swift */,
+				E1F47C2F287F9A76000B3407 /* GoogleService-Info.plist */,
 			);
 			path = "Track&Field";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6F861D6284C840100A62B2E /* LaunchScreen.storyboard in Resources */,
+				E1F47C30287F9A76000B3407 /* GoogleService-Info.plist in Resources */,
 				E6F861D3284C840100A62B2E /* Assets.xcassets in Resources */,
 				E6F861D1284C83FE00A62B2E /* Main.storyboard in Resources */,
 			);

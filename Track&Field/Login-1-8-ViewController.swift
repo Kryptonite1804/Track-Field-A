@@ -29,10 +29,10 @@ class Login_1_8_ViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         // Do any additional setup after loading the view.
         
-        self.groupName = UserDefaults.standard.string(forKey: "groupName1") ?? "デフォルト値"
+        self.groupName = UserDefaults.standard.string(forKey: "Enter_groupName") ?? "デフォルト値"
         
-        self.groupUid = UserDefaults.standard.string(forKey: "groupUid1") ?? "デフォルト値"
-        self.username = UserDefaults.standard.string(forKey: "username") ?? "デフォルト値"
+        self.groupUid = UserDefaults.standard.string(forKey: "Enter_groupUid") ?? "デフォルト値"
+        self.username = UserDefaults.standard.string(forKey: "Setup_username") ?? "デフォルト値"
         
         
         
@@ -119,8 +119,8 @@ class Login_1_8_ViewController: UIViewController {
                                 print("succeed")
                                 
                                 //ここから
-                                let ref3 = self.db.collection("AdultUsers")
-                                ref3.document(self.userUid).setData( //ここでgroupのuidをランダム作成
+                                let ref3 = self.db.collection("Users")
+                                ref3.document(self.userUid).setData( 
                                             ["groupUid" : self.groupUid,
                                              "username" : self.username])
                                 
