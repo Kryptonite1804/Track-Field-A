@@ -4,7 +4,7 @@
 //
 //  Created by 佐野生樹 on 2022/06/19.
 //
-//済
+//済！
 
 import UIKit
 
