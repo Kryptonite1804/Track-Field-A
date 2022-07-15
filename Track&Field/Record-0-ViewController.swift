@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Record_0_ViewController: UIViewController {
+class Record_0_ViewController: UIViewController,UITextViewDelegate{
 
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var day: UILabel!
