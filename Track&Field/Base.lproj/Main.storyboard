@@ -1205,7 +1205,7 @@
                                     <constraint firstAttribute="height" constant="3" id="7IE-2y-Pdc"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_LL 108" translatesAutoresizingMaskIntoConstraints="NO" id="XyB-yS-3R2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="XyB-yS-3R2">
                                 <rect key="frame" x="27" y="111" width="363" height="335"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="痛みの場所" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mda-4g-PFK">
@@ -1218,7 +1218,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="4Xm-Kd-3Vh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="4Xm-Kd-3Vh">
                                 <rect key="frame" x="27" y="463" width="363" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="BbK-Ry-lH2"/>
@@ -1244,7 +1244,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="raj-zV-Thz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="raj-zV-Thz">
                                 <rect key="frame" x="27" y="601" width="363" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="fjQ-fC-Dsf"/>
@@ -1317,15 +1317,15 @@
                                     <action selector="back" destination="0on-6L-k3P" eventType="touchUpInside" id="0kB-ff-5zg"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9BK-PH-7Uf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_light" translatesAutoresizingMaskIntoConstraints="NO" id="9BK-PH-7Uf">
                                 <rect key="frame" x="52" y="510" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="EUQ-ew-nmm"/>
                                     <constraint firstAttribute="width" constant="25" id="zgB-Fy-lIg"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y1T-hZ-JXc">
-                                <rect key="frame" x="337" y="510.5" width="25" height="24"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_heavy" translatesAutoresizingMaskIntoConstraints="NO" id="Y1T-hZ-JXc">
+                                <rect key="frame" x="337" y="510" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="2Ld-9L-82c"/>
                                     <constraint firstAttribute="height" constant="25" id="RTB-Bq-Knz"/>
@@ -1387,6 +1387,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="痛み" id="spe-aw-cFp"/>
                     <connections>
+                        <outlet property="painPlace_picture" destination="XyB-yS-3R2" id="bt2-M8-xY5"/>
+                        <outlet property="painStage_picture" destination="4Xm-Kd-3Vh" id="xUn-88-KF9"/>
+                        <outlet property="painWriting_picture" destination="raj-zV-Thz" id="Ftc-yZ-b0U"/>
                         <outlet property="pain_number" destination="f6j-T6-VNl" id="tCK-qs-kcN"/>
                         <outlet property="today_detail" destination="jb4-bH-uML" id="GUS-Kh-kAo"/>
                     </connections>
@@ -4702,18 +4705,22 @@
                     <size key="freeformSize" width="415" height="1079"/>
                     <connections>
                         <outlet property="downTimeButton" destination="FHE-Vi-QAr" id="Z0C-Kv-45l"/>
+                        <outlet property="downTime_text" destination="qsS-1K-CAe" id="qvS-mO-w2g"/>
                         <outlet property="down_distance_record" destination="hVn-S9-JAo" id="SAQ-MX-w4a"/>
                         <outlet property="down_picture" destination="3of-0f-XMS" id="uWF-BS-yiv"/>
                         <outlet property="main_mene_record" destination="y4c-SN-GmE" id="0tJ-VV-NQK"/>
                         <outlet property="practiceTypeButton" destination="86n-Z0-FZZ" id="mfM-m8-XFh"/>
                         <outlet property="practiceType_picture" destination="J4c-rc-YAm" id="WXP-S1-D7X"/>
+                        <outlet property="practiceType_text" destination="GLw-Bj-gE3" id="iRm-tC-4Ab"/>
                         <outlet property="practiceWriting_picture" destination="PwO-4T-g94" id="BPX-Wu-kUd"/>
                         <outlet property="practice_comment_record" destination="pjS-fL-IXs" id="yOP-Rq-Byk"/>
                         <outlet property="teamButton" destination="Ck5-sS-7Wy" id="fCu-OD-asD"/>
                         <outlet property="team_picture" destination="roK-Td-rge" id="jIM-2I-Og6"/>
+                        <outlet property="team_text" destination="6cB-f5-DRZ" id="1Kl-r1-lsm"/>
                         <outlet property="total_distance_record" destination="YGs-bd-pdu" id="r1j-YT-mgF"/>
                         <outlet property="total_picture" destination="eEZ-T1-naC" id="N9Z-j9-1xq"/>
                         <outlet property="upTimeButton" destination="jbY-T8-t8d" id="dgm-MS-97c"/>
+                        <outlet property="upTime_text" destination="XPs-ux-K04" id="cVL-L5-WtC"/>
                         <outlet property="up_distance_record" destination="47o-he-Uob" id="nzB-MA-JRN"/>
                         <outlet property="up_picture" destination="Zfg-sC-bl6" id="ltR-4i-yFv"/>
                     </connections>
@@ -4736,7 +4743,7 @@
                                     <constraint firstAttribute="height" constant="3" id="Ptc-dT-Va2"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_LL 108" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-V6-GJ4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-V6-GJ4">
                                 <rect key="frame" x="27" y="111" width="363" height="335"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="痛みの場所" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6L-Kh-32p">
@@ -4749,7 +4756,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="t3V-Nc-PWt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="t3V-Nc-PWt">
                                 <rect key="frame" x="27" y="463" width="363" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="6vc-0q-h48"/>
@@ -4775,7 +4782,7 @@
                                 <color key="textColor" red="0.63529413940000001" green="0.35294118520000001" blue="0.93725490570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p_rectangle_detail_L_D" translatesAutoresizingMaskIntoConstraints="NO" id="tpq-ZA-3j7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white_prefect_rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="tpq-ZA-3j7">
                                 <rect key="frame" x="27" y="601" width="363" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="aWS-uL-whH"/>
@@ -4848,16 +4855,16 @@
                                     <action selector="back" destination="DHw-op-Z6D" eventType="touchUpInside" id="8BC-zA-Ryt"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-Bo-NDE">
-                                <rect key="frame" x="52" y="515.5" width="20" height="19"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_light" translatesAutoresizingMaskIntoConstraints="NO" id="Ypr-Bo-NDE">
+                                <rect key="frame" x="52" y="515" width="20" height="20"/>
                                 <color key="tintColor" red="0.77837723489999999" green="0.54356080289999997" blue="0.97850888970000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="8Xb-pa-Ggl"/>
                                     <constraint firstAttribute="width" constant="20" id="T8H-2p-TAx"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-lq-z4Z">
-                                <rect key="frame" x="342" y="515.5" width="20" height="19"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_heavy" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-lq-z4Z">
+                                <rect key="frame" x="342" y="515" width="20" height="20"/>
                                 <color key="tintColor" red="0.68286156649999996" green="0.33401390910000001" blue="0.97000414130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="5pv-zQ-oCv"/>
@@ -4920,6 +4927,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="痛みを記録" id="ocO-I1-fSF"/>
                     <connections>
+                        <outlet property="painPlace_picture" destination="CXS-V6-GJ4" id="e1D-Od-paZ"/>
+                        <outlet property="painStage_picture" destination="t3V-Nc-PWt" id="du4-RS-4XL"/>
+                        <outlet property="painWriting_picture" destination="tpq-ZA-3j7" id="m7m-og-0dq"/>
                         <outlet property="pain_writing" destination="0bO-5T-r6D" id="YJQ-SG-CAi"/>
                     </connections>
                 </viewController>
@@ -5590,6 +5600,7 @@
                         <outlet property="date" destination="Zps-Rw-lZV" id="JWG-47-3o8"/>
                         <outlet property="day" destination="oui-cO-FQ4" id="hRM-Sh-qTQ"/>
                         <outlet property="eatTime_picture" destination="i2O-kD-f5Z" id="jlL-kP-0b4"/>
+                        <outlet property="eatTime_text" destination="EKG-qS-sRF" id="gOT-zb-XDr"/>
                         <outlet property="eat_time_check" destination="Osb-cA-2Um" id="OjA-5c-1kK"/>
                         <outlet property="maxtemper" destination="aqO-un-BT8" id="cxL-pk-agt"/>
                         <outlet property="mealTimeButton" destination="o1m-Eq-8oa" id="Vlz-JT-qyL"/>
@@ -5602,16 +5613,21 @@
                         <outlet property="placefeild_picture" destination="kW1-Qn-wr1" id="DqY-lv-2ao"/>
                         <outlet property="point_check" destination="Yqx-2d-l2l" id="HPF-3J-UQ6"/>
                         <outlet property="point_picture" destination="JaZ-Ou-zc1" id="OAV-1c-uep"/>
+                        <outlet property="practicePlaceType_text" destination="H5c-Fw-G48" id="Ecv-ku-PSO"/>
                         <outlet property="practicePonitButton" destination="6r8-qs-2iX" id="RMr-dy-DEQ"/>
+                        <outlet property="practicePonit_text" destination="klD-1f-BfT" id="07Q-MD-QT7"/>
                         <outlet property="practice_mene_check" destination="0b6-Jo-6U9" id="mfk-v6-67G"/>
                         <outlet property="practicemene_picture" destination="bCz-g9-u58" id="zZl-Mq-DeF"/>
                         <outlet property="sleepEndButton" destination="wE8-Dc-D4G" id="BjX-Zj-sVX"/>
+                        <outlet property="sleepEnd_text" destination="PzP-Wy-uyA" id="hPT-67-ume"/>
                         <outlet property="sleepStartButton" destination="oef-Yc-dlf" id="jQo-Uy-1hx"/>
+                        <outlet property="sleepStart_text" destination="439-7e-g4B" id="WZr-kN-8df"/>
                         <outlet property="sleep_check" destination="mZ9-Fg-gkj" id="HFt-Z4-OVd"/>
                         <outlet property="sleep_picture" destination="qDR-iO-1hb" id="GB1-kh-S8k"/>
                         <outlet property="tiredRevelButton" destination="z0D-bB-hS7" id="p5h-js-9Uj"/>
                         <outlet property="tired_check" destination="Rtl-Y4-bFO" id="Vbi-3J-8pP"/>
                         <outlet property="tired_picture" destination="ZIc-7m-yxU" id="gKm-cX-iBE"/>
+                        <outlet property="tired_text" destination="UP1-OB-2vY" id="UuT-fg-fHt"/>
                         <outlet property="weather1" destination="sZR-PO-PLr" id="sf8-Fl-3sM"/>
                         <outlet property="weather2" destination="qvx-pK-Jld" id="Nxw-4n-x6z"/>
                         <outlet property="writing" destination="xJJ-D4-8qU" id="TAk-WE-8Gl"/>
@@ -6332,10 +6348,8 @@
         <image name="Rectangle 140" width="25" height="25"/>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="exclamationmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
         <image name="internaldrive.fill" catalog="system" width="128" height="87"/>
         <image name="lasso" catalog="system" width="128" height="118"/>
-        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="p_+" width="43" height="44"/>
         <image name="p_line_" width="38" height="38"/>
         <image name="p_line_bold" width="375" height="3"/>
@@ -6343,12 +6357,12 @@
         <image name="p_rectangle_curbed_L" width="162" height="48"/>
         <image name="p_rectangle_curbed_M" width="120" height="48"/>
         <image name="p_rectangle_curbed_S" width="112" height="38"/>
-        <image name="p_rectangle_detail_LL 108" width="330" height="352"/>
         <image name="p_rectangle_detail_L_D" width="330" height="152"/>
         <image name="p_rectangle_detail_M_D" width="330" height="64"/>
         <image name="p_~" width="8" height="22"/>
         <image name="p_×" width="12" height="12"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="pain_heavy" width="23" height="23"/>
+        <image name="pain_light" width="23" height="23"/>
         <image name="r_line_light" width="320" height="1"/>
         <image name="square.and.arrow.up.on.square" catalog="system" width="117" height="128"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>

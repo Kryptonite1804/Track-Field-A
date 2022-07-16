@@ -35,6 +35,13 @@ class Record_0_ViewController: UIViewController,UITextViewDelegate{
     @IBOutlet weak var tired_picture: UIImageView!
     @IBOutlet weak var writing_picture: UIImageView!
     
+    @IBOutlet weak var practicePlaceType_text: UITextField!
+    @IBOutlet weak var practicePonit_text: UITextField!
+    @IBOutlet weak var eatTime_text: UITextField!
+    @IBOutlet weak var sleepStart_text: UITextField!
+    @IBOutlet weak var sleepEnd_text: UITextField!
+    @IBOutlet weak var tired_text: UITextField!
+    
     
     @IBOutlet weak var writing: UITextView!
     
@@ -44,6 +51,8 @@ class Record_0_ViewController: UIViewController,UITextViewDelegate{
     @IBOutlet weak var sleepStartButton: UIButton!
     @IBOutlet weak var sleepEndButton: UIButton!
     @IBOutlet weak var tiredRevelButton: UIButton!
+    
+    
     
     let createdDate_Formatter = DateFormatter()  //DP
     var createdDate: String = ""

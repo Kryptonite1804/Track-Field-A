@@ -22,12 +22,18 @@ class Record_1_ViewController: UIViewController,UITextViewDelegate {
     @IBOutlet weak var down_picture: UIImageView!
     @IBOutlet weak var total_picture: UIImageView!
     
+    @IBOutlet weak var team_text: UITextField!
+    @IBOutlet weak var practiceType_text: UITextField!
+    @IBOutlet weak var upTime_text: UITextField!
+    @IBOutlet weak var downTime_text: UITextField!
     
     @IBOutlet weak var teamButton: UIButton!
     @IBOutlet weak var practiceTypeButton: UIButton!
     @IBOutlet weak var upTimeButton: UIButton!
     @IBOutlet weak var downTimeButton: UIButton!
 
+    
+    
     
     var aboutButton = UIButton()
     
